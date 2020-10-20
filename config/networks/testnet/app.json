@@ -20,16 +20,7 @@
 				"package": "@arkecosystem/core-magistrate-transactions"
 			},
 			{
-				"package": "@protokol/nft-base-transactions"
-			},
-			{
-				"package": "@protokol/nft-exchange-transactions"
-			},
-			{
 				"package": "@arkecosystem/core-transaction-pool"
-			},
-			{
-				"package": "@protokol/guardian-transactions"
 			},
 			{
 				"package": "@arkecosystem/core-p2p"
@@ -39,15 +30,6 @@
 			},
 			{
 				"package": "@arkecosystem/core-api"
-			},
-			{
-				"package": "@protokol/nft-base-api"
-			},
-			{
-				"package": "@protokol/nft-exchange-api"
-			},
-			{
-				"package": "@protokol/guardian-api"
 			},
 			{
 				"package": "@arkecosystem/core-magistrate-api"
@@ -81,16 +63,7 @@
 				"package": "@arkecosystem/core-magistrate-transactions"
 			},
 			{
-				"package": "@protokol/nft-base-transactions"
-			},
-			{
-				"package": "@protokol/nft-exchange-transactions"
-			},
-			{
 				"package": "@arkecosystem/core-transaction-pool"
-			},
-			{
-				"package": "@protokol/guardian-transactions"
 			},
 			{
 				"package": "@arkecosystem/core-p2p"
@@ -100,15 +73,6 @@
 			},
 			{
 				"package": "@arkecosystem/core-api"
-			},
-			{
-				"package": "@protokol/nft-base-api"
-			},
-			{
-				"package": "@protokol/nft-exchange-api"
-			},
-			{
-				"package": "@protokol/guardian-api"
 			},
 			{
 				"package": "@arkecosystem/core-magistrate-api"
