@@ -136,7 +136,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0-next.4"],
             ["@arkecosystem/utils", "npm:1.2.0"],
             ["@hapi/joi", "npm:17.1.1"],
-            ["ajv", "npm:6.12.6"],
+            ["@oclif/errors", "npm:1.3.3"],
             ["bip39", "npm:3.0.2"],
             ["boxen", "npm:4.2.0"],
             ["bytebuffer", "npm:5.0.1"],
