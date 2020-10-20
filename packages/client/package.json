@@ -1,14 +1,14 @@
 {
 	"name": "@protokol/client",
 	"description": "A Light TypeScript Client Supporting Protokol.com Transactions And Public ARK REST API",
-	"version": "1.0.0-beta.30",
+	"version": "1.0.0-beta.28",
 	"homepage": "https://docs.protokol.com/",
 	"bugs": {
-		"url": "https://github.com/protokol/nft-plugins/issues"
+		"url": "https://github.com/protokol/commons/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/protokol/nft-plugins.git"
+		"url": "https://github.com/protokol/commons.git"
 	},
 	"keywords": [
 		"protokol",
@@ -33,8 +33,8 @@
 		"build:watch": "yarn build -w",
 		"clean": "rimraf .coverage dist tmp",
 		"prepublishOnly": "yarn build",
-		"test": "jest --detectOpenHandles --forceExit",
-		"test:coverage": "cross-env jest __tests__ --coverage --detectOpenHandles --forceExit",
+		"test:unit": "jest --detectOpenHandles --forceExit",
+		"test:unit:coverage": "cross-env jest __tests__ --coverage --detectOpenHandles --forceExit",
 		"test:watch": "jest --watchAll",
 		"publish": "yarn build && yarn npm publish --access public",
 		"publish:beta": "yarn build && yarn npm publish --access public --tag beta --tolerate-republish"
