@@ -31,10 +31,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/client"
       },
       {
-        "name": "@protokol/examples",
-        "reference": "workspace:packages/examples"
-      },
-      {
         "name": "@protokol/utils",
         "reference": "workspace:packages/utils"
       }
@@ -45,7 +41,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@protokol/cli", ["workspace:packages/cli"]],
       ["@protokol/client", ["workspace:packages/client"]],
       ["@protokol/commons", ["workspace:."]],
-      ["@protokol/examples", ["workspace:packages/examples"]],
       ["@protokol/utils", ["workspace:packages/utils"]]
     ],
     "fallbackPool": [
@@ -2750,52 +2745,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:26.3.0"],
             ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"],
             ["typescript-language-server", "npm:0.4.0"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["@protokol/examples", [
-        ["workspace:packages/examples", {
-          "packageLocation": "./packages/examples/",
-          "packageDependencies": [
-            ["@protokol/examples", "workspace:packages/examples"],
-            ["@protokol/client", "workspace:packages/client"],
-            ["@protokol/guardian-crypto", "npm:1.0.0-beta.28"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
-            ["@sindresorhus/tsconfig", "npm:0.7.0"],
-            ["@types/eslint", "npm:7.2.4"],
-            ["@types/eslint-plugin-prettier", "npm:3.1.0"],
-            ["@types/hapi__boom", "npm:7.4.1"],
-            ["@types/hapi__joi", "npm:16.0.12"],
-            ["@types/is-url-superb", "npm:3.0.0"],
-            ["@types/jest", "npm:26.0.14"],
-            ["@types/lodash.orderby", "npm:4.6.6"],
-            ["@types/node", "npm:14.11.11"],
-            ["@types/prettier", "npm:2.1.2"],
-            ["@types/rimraf", "npm:3.0.0"],
-            ["@types/semver", "npm:7.3.2"],
-            ["@types/uuid", "npm:7.0.4"],
-            ["@typescript-eslint/eslint-plugin", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:3.10.1"],
-            ["@typescript-eslint/parser", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:3.10.1"],
-            ["codecov", "npm:3.8.0"],
-            ["cross-env", "npm:7.0.2"],
-            ["eslint", "npm:7.11.0"],
-            ["eslint-config-prettier", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:6.12.0"],
-            ["eslint-plugin-jest", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:23.20.0"],
-            ["eslint-plugin-prettier", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:3.1.4"],
-            ["eslint-plugin-simple-import-sort", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:5.0.3"],
-            ["got", "npm:11.7.0"],
-            ["jest", "npm:26.6.0"],
-            ["jest-extended", "npm:0.11.5"],
-            ["jest-localstorage-mock", "npm:2.4.3"],
-            ["nock", "npm:13.0.4"],
-            ["npm-check-updates", "npm:7.1.1"],
-            ["prettier", "npm:2.1.2"],
-            ["rimraf", "npm:3.0.2"],
-            ["ts-jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:26.3.0"],
-            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.19.2"],
-            ["typescript", "patch:typescript@npm%3A4.0.3#builtin<compat/typescript>::version=4.0.3&hash=5bf698"]
           ],
           "linkType": "SOFT",
         }]
