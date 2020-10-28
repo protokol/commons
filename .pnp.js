@@ -2620,6 +2620,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.4"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.4"],
             ["@oclif/command", "virtual:94fac21a1a2025b70adfaefdf38827ffccf69dcfc9c3954fa9b39e3d15961f035ebaa812536ee9b164cb38c3f84cf0b130529ad59b30964af02dbc0d3619943e#npm:1.8.0"],
+            ["@oclif/errors", "npm:1.3.3"],
             ["@oclif/plugin-help", "npm:3.2.0"],
             ["@protokol/guardian-crypto", "npm:1.0.0-beta.28"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
