@@ -20,24 +20,21 @@ export class Builder {
 		const walletChanges: WalletChange[] = [];
 
 		let senderWallet = (this.app.config.passphrase
-			? this.app.walletRepository.getWallet(this.app.config.passphrase)
+			? this.app.walletRepository.getWalletInfo(this.app.config.passphrase)
 			: this.app.walletRepository.getRandomWallet()) as ExtendedWallet;
 
 		let recipientWallet = (this.app.config.recipientId
-			? this.app.walletRepository.getWallet(this.app.config.recipientId)
+			? { address: this.app.config.recipientId }
 			: this.app.walletRepository.getRandomWallet()) as ExtendedWallet;
-		const recipientId = recipientWallet.address;
 
 		senderWallet = {
 			...senderWallet,
-			...(await this.app.client.retrieveSenderWallet(Identities.Address.fromPublicKey(senderWallet.publicKey))),
+			...(await this.app.client.retrieveSenderWallet(senderWallet.address)),
 		};
 
 		recipientWallet = {
 			...recipientWallet,
-			...(await this.app.client.retrieveSenderWallet(
-				Identities.Address.fromPublicKey(recipientWallet.publicKey),
-			)),
+			...(await this.app.client.retrieveSenderWallet(recipientWallet.address)),
 		};
 
 		const transactions: Interfaces.ITransactionJson[] = [];
@@ -64,7 +61,7 @@ export class Builder {
 			}
 
 			if (type === TransactionType.Transfer) {
-				transaction.recipientId(recipientId);
+				transaction.recipientId(recipientWallet.address);
 				transaction.amount(this.app.config.amount);
 				transaction.expiration(this.app.config.expiration || 0);
 			} else if (type === TransactionType.SecondSignature) {
@@ -72,9 +69,8 @@ export class Builder {
 				transaction.signatureAsset(secondPassphrase);
 
 				walletChanges.push({
+					...senderWallet,
 					transaction: transaction,
-					address: senderWallet.address,
-					publicKey: undefined || "", // TODO
 					secondPassphrase,
 				});
 			} else if (type === TransactionType.DelegateRegistration) {
@@ -138,7 +134,7 @@ export class Builder {
 				}
 			} else if (type === TransactionType.DelegateResignation && Managers.configManager.getMilestone().aip11) {
 			} else if (type === TransactionType.HtlcLock && Managers.configManager.getMilestone().aip11) {
-				transaction.recipientId(recipientId);
+				transaction.recipientId(recipientWallet.address);
 				transaction.amount(this.app.config.amount);
 
 				if (this.app.config.htlc.lock.expiration.type === Enums.HtlcLockExpirationType.EpochTimestamp) {
@@ -219,7 +215,7 @@ export class Builder {
 				}
 
 				if (!transferAsset.recipientId) {
-					transferAsset.recipientId = recipientId;
+					transferAsset.recipientId = recipientWallet.address;
 				}
 				transaction.NFTTransferAsset(transferAsset);
 			} else if (type === TransactionType.NFTBurnAsset && Managers.configManager.getMilestone().aip11) {

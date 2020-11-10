@@ -34,16 +34,13 @@ export class WalletRepository {
 		this.wallets.push(wallet);
 	}
 
-	public getWallet(addressOrPassphrase: string): Wallet {
-		const wallet = this.wallets.find(
-			(x) => x.address === addressOrPassphrase || x.passphrase === addressOrPassphrase,
-		);
-
-		if (!wallet) {
-			throw new Error(`Wallet ${addressOrPassphrase} not found`);
-		}
-
-		return wallet;
+	public getWalletInfo(passphrase: string): Wallet {
+		return {
+			address: Identities.Address.fromPassphrase(passphrase),
+			passphrase,
+			publicKey: Identities.PublicKey.fromPassphrase(passphrase),
+			signType: WalletSignType.Basic,
+		};
 	}
 
 	public getRandomWallet(): Wallet {
@@ -57,7 +54,7 @@ export class WalletRepository {
 
 				if (response.data.accept.includes(id)) {
 					if (walletChange.secondPassphrase) {
-						const wallet = this.getWallet(walletChange.address);
+						const wallet = this.getWalletInfo(walletChange.passphrase!);
 
 						wallet.signType = WalletSignType.SecondSignature;
 						wallet.secondPassphrase = walletChange.secondPassphrase;
