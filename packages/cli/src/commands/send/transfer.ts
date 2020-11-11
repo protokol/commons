@@ -24,7 +24,7 @@ export default class Transfer extends SendBase {
 			mergedConfig.expiration = flags.expiration;
 		}
 		if (flags.recipientId) {
-			config.recipientId = flags.recipientId;
+			mergedConfig.recipientId = flags.recipientId;
 		}
 
 		return mergedConfig;
