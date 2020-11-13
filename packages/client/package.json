@@ -40,7 +40,7 @@
 		"publish:beta": "yarn build && yarn npm publish --access public --tag beta --tolerate-republish"
 	},
 	"dependencies": {
-		"@arkecosystem/client": "^1.1.4",
+		"@arkecosystem/client": "^2.0.0",
 		"is-url-superb": "^4.0.0",
 		"ky": "^0.24.0",
 		"ky-universal": "^0.8.2",
