@@ -25,7 +25,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-api@npm:^3.0.0-next.9, @arkecosystem/core-api@npm:next":
+"@arkecosystem/core-api@npm:^3.0.0-next.3, @arkecosystem/core-api@npm:^3.0.0-next.9, @arkecosystem/core-api@npm:next":
   version: 3.0.0-next.9
   resolution: "@arkecosystem/core-api@npm:3.0.0-next.9"
   dependencies:
@@ -101,7 +101,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-database@npm:^3.0.0-next.9, @arkecosystem/core-database@npm:next":
+"@arkecosystem/core-database@npm:^3.0.0-next.3, @arkecosystem/core-database@npm:^3.0.0-next.9, @arkecosystem/core-database@npm:next":
   version: 3.0.0-next.9
   resolution: "@arkecosystem/core-database@npm:3.0.0-next.9"
   dependencies:
@@ -132,7 +132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-kernel@npm:^3.0.0-next.9":
+"@arkecosystem/core-kernel@npm:^3.0.0-next.3, @arkecosystem/core-kernel@npm:^3.0.0-next.9":
   version: 3.0.0-next.9
   resolution: "@arkecosystem/core-kernel@npm:3.0.0-next.9"
   dependencies:
@@ -300,7 +300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-state@npm:^3.0.0-next.9, @arkecosystem/core-state@npm:next":
+"@arkecosystem/core-state@npm:^3.0.0-next.3, @arkecosystem/core-state@npm:^3.0.0-next.9, @arkecosystem/core-state@npm:next":
   version: 3.0.0-next.9
   resolution: "@arkecosystem/core-state@npm:3.0.0-next.9"
   dependencies:
@@ -332,7 +332,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/core-transactions@npm:^3.0.0-next.9, @arkecosystem/core-transactions@npm:next":
+"@arkecosystem/core-transactions@npm:^3.0.0-next.3, @arkecosystem/core-transactions@npm:^3.0.0-next.9, @arkecosystem/core-transactions@npm:next":
   version: 3.0.0-next.9
   resolution: "@arkecosystem/core-transactions@npm:3.0.0-next.9"
   dependencies:
@@ -2436,6 +2436,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@protokol/guardian-api@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/guardian-api@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-api": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@hapi/boom": ^9.0.0
+    "@hapi/hapi": ^19.0.0
+    "@hapi/joi": ^17.1.0
+    "@protokol/guardian-crypto": ^1.0.0-beta.28
+    "@protokol/guardian-transactions": ^1.0.0-beta.28
+    latest-version: ^5.1.0
+  checksum: 7169888847adb76cebac33d924fbaf58e1af30d287efa392ccd4642b34df2d4cfea25056c3b4ca13a867b6ed2614d5e393b45b05d2529707201828194a2372df
+  languageName: node
+  linkType: hard
+
 "@protokol/guardian-crypto@npm:^1.0.0-beta.28":
   version: 1.0.0-beta.28
   resolution: "@protokol/guardian-crypto@npm:1.0.0-beta.28"
@@ -2444,6 +2460,36 @@ __metadata:
     "@protokol/utils": ^1.0.0-beta.28
     bytebuffer: ^5.0.1
   checksum: 024a22494ffe6ea349ecac316c5c22843ffdcd0034959eacd3ef9b7c8f1a64e0055db6ddeee9d34f46296f2fcf912ac822799af01e8a9b7eb9f0f5e48fe443bc
+  languageName: node
+  linkType: hard
+
+"@protokol/guardian-transactions@npm:^1.0.0-beta.28, @protokol/guardian-transactions@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/guardian-transactions@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-database": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@arkecosystem/core-state": ^3.0.0-next.3
+    "@arkecosystem/core-transactions": ^3.0.0-next.3
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/guardian-crypto": ^1.0.0-beta.28
+  checksum: 03aa6dda02ce325f130150ebcb6c7296d6f42129f53aafe28b18c6466bbbefb2ed8343abb62f97e652d076cc70bb6f98e1f5f851173a6300a973ad580001e13a
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-base-api@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-base-api@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-api": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@hapi/boom": ^9.0.0
+    "@hapi/hapi": ^19.0.0
+    "@hapi/joi": ^17.1.0
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+    "@protokol/nft-base-transactions": ^1.0.0-beta.28
+    latest-version: ^5.1.0
+  checksum: b7dcb25b82fb5e00dccec43118ba622a573819ed07f3ed86403d2a8814f18f4cf42e496331f4cb306fbdba2882dbe096b53b05a08dd013a099be71cdff6e623f
   languageName: node
   linkType: hard
 
@@ -2458,7 +2504,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/nft-exchange-crypto@npm:^1.0.0-beta.28":
+"@protokol/nft-base-transactions@npm:^1.0.0-beta.28, @protokol/nft-base-transactions@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-base-transactions@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-database": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@arkecosystem/core-state": ^3.0.0-next.3
+    "@arkecosystem/core-transactions": ^3.0.0-next.3
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+  checksum: 97393e8cf061f00013acc0916cee918ad309e54c7d8f63177690ec999d8fd18f42a618f3c27b67f67009258412a7470b7655ff638504a72bee3af127ec62ba86
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-api@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-exchange-api@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-api": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@hapi/boom": ^9.0.0
+    "@hapi/hapi": ^19.0.0
+    "@hapi/joi": ^17.1.0
+    "@protokol/nft-exchange-transactions": ^1.0.0-beta.28
+    latest-version: ^5.1.0
+  checksum: 0a392ea09bec82668d9918058dbabee2be00ae14337f7b43136b28f36e18c27c21aeb59f8c575c405b2ce8c633875c373b32c492247d7b9eec1beaa1c9d9e728
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-crypto@npm:^1.0.0-beta.28, @protokol/nft-exchange-crypto@npm:beta":
   version: 1.0.0-beta.28
   resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.28"
   dependencies:
@@ -2466,6 +2541,22 @@ __metadata:
     "@protokol/utils": ^1.0.0-beta.28
     bytebuffer: ^5.0.1
   checksum: 26b82f6d8ef5f20fa2b775e6f2c51ac2018b823c08eef76ea1a5c1d745eb448f108d085b96113e2e91c8509ded45950a0d16870606bdb077c094079d87f7e3b9
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-transactions@npm:^1.0.0-beta.28, @protokol/nft-exchange-transactions@npm:beta":
+  version: 1.0.0-beta.28
+  resolution: "@protokol/nft-exchange-transactions@npm:1.0.0-beta.28"
+  dependencies:
+    "@arkecosystem/core-database": ^3.0.0-next.3
+    "@arkecosystem/core-kernel": ^3.0.0-next.3
+    "@arkecosystem/core-state": ^3.0.0-next.3
+    "@arkecosystem/core-transactions": ^3.0.0-next.3
+    "@arkecosystem/crypto": ^3.0.0-next.3
+    "@protokol/nft-base-crypto": ^1.0.0-beta.28
+    "@protokol/nft-base-transactions": ^1.0.0-beta.28
+    "@protokol/nft-exchange-crypto": ^1.0.0-beta.28
+  checksum: 797523771c154b07967ba50f4722b8ab87495c1775509c2e4d79601f8a221e72cd73880773dc76143d46664adf688d9bc03e050a9971b5e99f1647ebdaa07dde
   languageName: node
   linkType: hard
 
@@ -3375,7 +3466,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4":
+"ajv@npm:^6.10.0, ajv@npm:^6.10.2, ajv@npm:^6.12.3, ajv@npm:^6.12.4, ajv@npm:latest":
   version: 6.12.6
   resolution: "ajv@npm:6.12.6"
   dependencies:
