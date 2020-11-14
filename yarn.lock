@@ -2363,7 +2363,7 @@ __metadata:
     jest: ^26.4.0
     jest-extended: ^0.11.5
     jest-localstorage-mock: ^2.4.3
-    ky: ^0.24.0
+    ky: ^0.25.0
     ky-universal: ^0.8.2
     lodash.orderby: ^4.6.0
     nock: ^13.0.4
@@ -8520,10 +8520,10 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"ky@npm:^0.24.0":
-  version: 0.24.0
-  resolution: "ky@npm:0.24.0"
-  checksum: 56dee6a6ccd09436062596b405318122b063e23ea7765958ad5c20af81311c1dad70e9f71e4903f1c36be7ce03510aad6d3890d5d0614b67e83920bacd31de8c
+"ky@npm:^0.25.0":
+  version: 0.25.0
+  resolution: "ky@npm:0.25.0"
+  checksum: 575e00308fae984f10c10f5b6793b3b5d50f668296d903fdb13446cd56c6a60936ec0f62b37c11278420165e10ea64101356b28754d54bf356e8c6c7b4aa0bc0
   languageName: node
   linkType: hard
 
