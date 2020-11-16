@@ -38,8 +38,7 @@
 		"build": "yarn clean && tsc",
 		"build:watch": "yarn build -w",
 		"clean": "rimraf .coverage dist tmp",
-		"postpack": "rm -f oclif.manifest.json",
-		"prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme"
+		"postpack": "rm -f oclif.manifest.json"
 	},
 	"dependencies": {
 		"@arkecosystem/core-kernel": "^3.0.0-next.9",
