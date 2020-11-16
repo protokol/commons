@@ -36,9 +36,7 @@
 		"test": "yarn test:unit",
 		"prepublishOnly": "yarn build",
 		"test:unit": "jest __tests__/unit/** --forceExit",
-		"test:unit:coverage": "jest __tests__/unit --coverage",
-		"publish": "yarn build && yarn npm publish --access public",
-		"publish:beta": "yarn build && yarn npm publish --access public --tag beta --tolerate-republish"
+		"test:unit:coverage": "jest __tests__/unit --coverage"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^0.7.0",
