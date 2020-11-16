@@ -1,7 +1,7 @@
 {
 	"name": "@protokol/client",
 	"description": "A Light TypeScript Client Supporting Protokol.com Transactions And Public ARK REST API",
-	"version": "1.0.0-beta.28",
+	"version": "1.0.0-beta.30",
 	"homepage": "https://docs.protokol.com/",
 	"bugs": {
 		"url": "https://github.com/protokol/commons/issues"
@@ -35,9 +35,7 @@
 		"prepublishOnly": "yarn build",
 		"test:unit": "jest --detectOpenHandles --forceExit",
 		"test:unit:coverage": "cross-env jest __tests__ --coverage --detectOpenHandles --forceExit",
-		"test:watch": "jest --watchAll",
-		"publish": "yarn build && yarn npm publish --access public",
-		"publish:beta": "yarn build && yarn npm publish --access public --tag beta --tolerate-republish"
+		"test:watch": "jest --watchAll"
 	},
 	"dependencies": {
 		"@arkecosystem/client": "^2.0.0",

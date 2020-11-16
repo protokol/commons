@@ -2581,9 +2581,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@oclif/command", "virtual:94fac21a1a2025b70adfaefdf38827ffccf69dcfc9c3954fa9b39e3d15961f035ebaa812536ee9b164cb38c3f84cf0b130529ad59b30964af02dbc0d3619943e#npm:1.8.0"],
             ["@oclif/errors", "npm:1.3.4"],
             ["@oclif/plugin-help", "npm:3.2.0"],
-            ["@protokol/guardian-crypto", "npm:1.0.0-beta.28"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.30"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.42"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.42"],
             ["@sindresorhus/tsconfig", "npm:0.7.0"],
             ["@types/eslint", "npm:7.2.4"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -2736,6 +2736,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.30", {
+          "packageLocation": "./.yarn/cache/@protokol-guardian-crypto-npm-1.0.0-beta.30-6a346fb86e-83f5626e42.zip/node_modules/@protokol/guardian-crypto/",
+          "packageDependencies": [
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.30"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/guardian-transactions", [
@@ -2775,6 +2785,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.28-fde3c53e83-f26ba00284.zip/node_modules/@protokol/nft-base-crypto/",
           "packageDependencies": [
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.42", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.42-3942d8d0f0-e786cc700e.zip/node_modules/@protokol/nft-base-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.42"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
             ["@protokol/utils", "workspace:packages/utils"],
             ["bytebuffer", "npm:5.0.1"]
@@ -2820,6 +2840,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.28-6baa9c1d36-26b82f6d8e.zip/node_modules/@protokol/nft-exchange-crypto/",
           "packageDependencies": [
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.28"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.42", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.42-fd866eaadf-07458a6259.zip/node_modules/@protokol/nft-exchange-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.42"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.9"],
             ["@protokol/utils", "workspace:packages/utils"],
             ["bytebuffer", "npm:5.0.1"]
@@ -10564,7 +10594,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.3.0", {
-          "packageLocation": "./.yarn/cache/ngrok-npm-3.3.0-ff8d3edfc1-6e9bdd8e03.zip/node_modules/ngrok/",
+          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.3.0-ff8d3edfc1/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.3.0"],
             ["@types/node", "npm:8.10.66"],
@@ -12065,7 +12095,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.1", {
-          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.1-e168613ba4-6917e25337.zip/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.1-e168613ba4/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.1"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
