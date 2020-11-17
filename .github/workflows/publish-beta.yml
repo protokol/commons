@@ -16,6 +16,10 @@ jobs:
               run: yarn && yarn build
 
             - name: Publish to NPM
-              run: bash scripts/publish.sh
+              run: |
+                cd packages
+                cd utils && npm publish --tag beta --access public --tolerate-republish && cd ..
+                cd client && npm publish --tag beta --access public --tolerate-republish && cd ..
+                cd cli && npm publish --tag beta --access public --tolerate-republish && cd ..
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_AUTOMATION_TOKEN }}
