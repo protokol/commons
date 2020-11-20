@@ -44,7 +44,12 @@ export class WalletRepository {
 	}
 
 	public getRandomWallet(): Wallet {
-		return this.wallets[Math.floor(Math.random() * this.wallets.length)];
+		const randomWallet = this.wallets[Math.floor(Math.random() * this.wallets.length)];
+		if (!randomWallet) {
+			throw new Error("Error getting random wallet");
+		}
+
+		return randomWallet;
 	}
 
 	public handleWalletChanges(walletChanges: WalletChange[], response) {
