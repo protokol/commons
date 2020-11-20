@@ -23,17 +23,17 @@ describe("API - 1.0 - Base/Resources - Transfers", () => {
 		expect(response.body.meta.last).toBe("/nft/transfers?page=1&limit=100&transform=true");
 
 		// Data
-		expect(response.body.data[0].id).toBe("e1bd043715040cc1622ab19a3527bdcb760f5c08764ec0759fa07518902e03fc");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("e1bd043715040cc1622ab19a3527bdcb760f5c08764ec0759fa07518902e03fc");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].nftTransfer.nftIds).toStrictEqual([
+		expect(response.body.data[0]!.nftTransfer.nftIds).toStrictEqual([
 			"7373bbe5524898faec40bfcd12c6161981771f3be6426404208784831f4b0d02",
 		]);
-		expect(response.body.data[0].nftTransfer.recipientId).toStrictEqual("ANBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo");
-		expect(response.body.data[0].timestamp.epoch).toStrictEqual(102725304);
-		expect(response.body.data[0].timestamp.unix).toStrictEqual(1592826504);
-		expect(response.body.data[0].timestamp.human).toStrictEqual("2020-06-22T11:48:24.000Z");
+		expect(response.body.data[0]!.nftTransfer.recipientId).toStrictEqual("ANBkoGqWeTSiaEVgVzSKZd3jS7UWzv9PSo");
+		expect(response.body.data[0]!.timestamp.epoch).toStrictEqual(102725304);
+		expect(response.body.data[0]!.timestamp.unix).toStrictEqual(1592826504);
+		expect(response.body.data[0]!.timestamp.human).toStrictEqual("2020-06-22T11:48:24.000Z");
 	});
 
 	it('should call \\"get\\" method', async () => {

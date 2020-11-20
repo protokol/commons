@@ -23,14 +23,14 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		expect(response.body.meta.last).toBe("/nft/collections?page=1&limit=100&transform=true");
 
 		// Data
-		expect(response.body.data[0].id).toBe("e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
 		);
-		expect(response.body.data[0].name).toBe("FIFA-20-PLAYERS");
-		expect(response.body.data[0].description).toBe("FIFA-20-PLAYERS cards");
-		expect(response.body.data[0].maximumSupply).toBe(100);
-		expect(response.body.data[0].jsonSchema).toStrictEqual({
+		expect(response.body.data[0]!.name).toBe("FIFA-20-PLAYERS");
+		expect(response.body.data[0]!.description).toBe("FIFA-20-PLAYERS cards");
+		expect(response.body.data[0]!.maximumSupply).toBe(100);
+		expect(response.body.data[0]!.jsonSchema).toStrictEqual({
 			properties: {
 				name: {
 					type: "string",
@@ -55,7 +55,7 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 				},
 			},
 		});
-		expect(response.body.data[0].allowedIssuers).toEqual(
+		expect(response.body.data[0]!.allowedIssuers).toEqual(
 			expect.arrayContaining([
 				"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 				"030c8ee7a2026ac23dbcb650e08cda9fc6386805fa2d788e6a72ba01d72fdcc75e",
@@ -63,9 +63,9 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		);
 
 		//timestamp
-		expect(response.body.data[0].timestamp.epoch).toBe(105910672);
-		expect(response.body.data[0].timestamp.unix).toBe(1596011872);
-		expect(response.body.data[0].timestamp.human).toBe("2020-07-29T08:37:52.000Z");
+		expect(response.body.data[0]!.timestamp.epoch).toBe(105910672);
+		expect(response.body.data[0]!.timestamp.unix).toBe(1596011872);
+		expect(response.body.data[0]!.timestamp.human).toBe("2020-07-29T08:37:52.000Z");
 	});
 
 	it('should call \\"get\\" method"', async () => {
@@ -161,14 +161,14 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		expect(response.body.data.publicKey).toBe("022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0");
 
 		// Data
-		expect(response.body.data.nft.collections[0].collectionId).toBe(
+		expect(response.body.data.nft.collections[0]!.collectionId).toBe(
 			"bc045f0a977d368735030c7eadaa45de5581c1ffb2b0e9e93752c82579c516fe",
 		);
-		expect(response.body.data.nft.collections[0].currentSupply).toBe(2);
-		expect(response.body.data.nft.collections[0].nftCollectionAsset.name).toBe("FIFA-20-PLAYERS");
-		expect(response.body.data.nft.collections[0].nftCollectionAsset.description).toBe("FIFA-20-PLAYERS cards");
-		expect(response.body.data.nft.collections[0].nftCollectionAsset.maximumSupply).toBe(10);
-		expect(response.body.data.nft.collections[0].nftCollectionAsset.jsonSchema).toStrictEqual({
+		expect(response.body.data.nft.collections[0]!.currentSupply).toBe(2);
+		expect(response.body.data.nft.collections[0]!.nftCollectionAsset.name).toBe("FIFA-20-PLAYERS");
+		expect(response.body.data.nft.collections[0]!.nftCollectionAsset.description).toBe("FIFA-20-PLAYERS cards");
+		expect(response.body.data.nft.collections[0]!.nftCollectionAsset.maximumSupply).toBe(10);
+		expect(response.body.data.nft.collections[0]!.nftCollectionAsset.jsonSchema).toStrictEqual({
 			properties: {
 				name: {
 					type: "string",
@@ -224,14 +224,14 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		expect(response.body.meta.last).toBe("/nft/collections/search?page=1&limit=100&transform=true");
 
 		// Data
-		expect(response.body.data[0].id).toBe("e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("e38324971ab923b6d74693448cad180207b4aa99ca4f5c20625dc290cd8b7e55");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"022f2978d57f95c021b9d4bf082b482738ce392bcf6bc213710e7a21504cfeb5a0",
 		);
-		expect(response.body.data[0].name).toBe("FIFA-20-PLAYERS");
-		expect(response.body.data[0].description).toBe("FIFA-20-PLAYERS cards");
-		expect(response.body.data[0].maximumSupply).toBe(100);
-		expect(response.body.data[0].jsonSchema).toStrictEqual({
+		expect(response.body.data[0]!.name).toBe("FIFA-20-PLAYERS");
+		expect(response.body.data[0]!.description).toBe("FIFA-20-PLAYERS cards");
+		expect(response.body.data[0]!.maximumSupply).toBe(100);
+		expect(response.body.data[0]!.jsonSchema).toStrictEqual({
 			properties: {
 				name: {
 					type: "string",
@@ -256,7 +256,7 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 				},
 			},
 		});
-		expect(response.body.data[0].allowedIssuers).toEqual(
+		expect(response.body.data[0]!.allowedIssuers).toEqual(
 			expect.arrayContaining([
 				"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 				"030c8ee7a2026ac23dbcb650e08cda9fc6386805fa2d788e6a72ba01d72fdcc75e",
@@ -264,9 +264,9 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		);
 
 		//timestamp
-		expect(response.body.data[0].timestamp.epoch).toBe(105910672);
-		expect(response.body.data[0].timestamp.unix).toBe(1596011872);
-		expect(response.body.data[0].timestamp.human).toBe("2020-07-29T08:37:52.000Z");
+		expect(response.body.data[0]!.timestamp.epoch).toBe(105910672);
+		expect(response.body.data[0]!.timestamp.unix).toBe(1596011872);
+		expect(response.body.data[0]!.timestamp.human).toBe("2020-07-29T08:37:52.000Z");
 	});
 
 	it('should call \\"assetByCollectionId\\" method', async () => {
@@ -294,17 +294,17 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		);
 
 		// Data
-		expect(response.body.data[0].id).toBe("70faaab7da6bf93f4a8b494b66304d7a4841ecae2336ee0a4456e8d796e1d411");
-		expect(response.body.data[0].ownerPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("70faaab7da6bf93f4a8b494b66304d7a4841ecae2336ee0a4456e8d796e1d411");
+		expect(response.body.data[0]!.ownerPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].collectionId).toBe(
+		expect(response.body.data[0]!.collectionId).toBe(
 			"bc045f0a977d368735030c7eadaa45de5581c1ffb2b0e9e93752c82579c516fe",
 		);
-		expect(response.body.data[0].attributes).toStrictEqual({
+		expect(response.body.data[0]!.attributes).toStrictEqual({
 			name: "Antonio Caracciolo",
 			pac: 90,
 			sho: 65,
@@ -315,8 +315,8 @@ describe("API - 1.0 - Base/Resources - Collections", () => {
 		});
 
 		//timestamp
-		expect(response.body.data[0].timestamp.epoch).toBe(105910672);
-		expect(response.body.data[0].timestamp.unix).toBe(1596011872);
-		expect(response.body.data[0].timestamp.human).toBe("2020-07-29T08:37:52.000Z");
+		expect(response.body.data[0]!.timestamp.epoch).toBe(105910672);
+		expect(response.body.data[0]!.timestamp.unix).toBe(1596011872);
+		expect(response.body.data[0]!.timestamp.human).toBe("2020-07-29T08:37:52.000Z");
 	});
 });

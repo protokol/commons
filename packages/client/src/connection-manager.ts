@@ -20,7 +20,7 @@ export class ConnectionManager {
 		return Promise.resolve(this);
 	}
 
-	public getRandomConnection(): ProtokolConnection {
+	public getRandomConnection(): ProtokolConnection | undefined {
 		return this.protokolConnections[Math.floor(Math.random() * this.protokolConnections.length)];
 	}
 

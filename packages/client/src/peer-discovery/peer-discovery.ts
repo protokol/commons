@@ -91,7 +91,7 @@ export class PeerDiscovery {
 
 		const selectProperPeer = (): IPeer => {
 			const peer = this.seeds[Math.floor(Math.random() * this.seeds.length)];
-			if (peer.plugins) {
+			if (peer?.plugins) {
 				const coreApiPlugin = peer.plugins["@arkecosystem/core-api"];
 				if (!coreApiPlugin) {
 					return selectProperPeer();
@@ -125,7 +125,7 @@ export class PeerDiscovery {
 			peers = peers.filter((peer: IPeerResponse) => peer.latency <= this.latency!);
 		}
 
-		return orderBy(peers, [this.orderBy[0]], [this.orderBy[1] as any]);
+		return orderBy(peers, this.orderBy[0], this.orderBy[1] as any);
 	}
 
 	public async findPeersWithPlugin(name: string, opts: { additional?: string[] } = {}): Promise<IPeer[]> {
@@ -161,8 +161,9 @@ export class PeerDiscovery {
 		const peers: IPeer[] = [];
 
 		for (const i in responses) {
-			if (!(responses[i] as any).meta.totalCountIsEstimate) {
-				peers.push(apiPeers[i]);
+			const apiPeer = apiPeers[i];
+			if (!(responses[i] as any).meta.totalCountIsEstimate && apiPeer) {
+				peers.push(apiPeer);
 			}
 		}
 

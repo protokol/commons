@@ -23,18 +23,18 @@ describe("API - 1.0 - Exchange/Resources - Auctions", () => {
 		expect(response.body.meta.last).toBe("/nft/exchange/auctions?transform=true&page=1&limit=100");
 
 		// Data
-		expect(response.body.data[0].id).toBe("d8177d5c2a3eee46aea48fa5a8ce7c58c43c71909ac6cf9568e11065dc1f544a");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("d8177d5c2a3eee46aea48fa5a8ce7c58c43c71909ac6cf9568e11065dc1f544a");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].nftAuction.nftIds).toStrictEqual([
+		expect(response.body.data[0]!.nftAuction.nftIds).toStrictEqual([
 			"a8016c66d160606e289ed8bab6ce2b2d9916197111e8612257b10e54d83ba827",
 		]);
-		expect(response.body.data[0].nftAuction.startAmount).toStrictEqual("999");
-		expect(response.body.data[0].nftAuction.expiration.blockHeight).toStrictEqual(1000000);
-		expect(response.body.data[0].timestamp.epoch).toStrictEqual(102726648);
-		expect(response.body.data[0].timestamp.unix).toStrictEqual(1592827848);
-		expect(response.body.data[0].timestamp.human).toStrictEqual("2020-06-22T12:10:48.000Z");
+		expect(response.body.data[0]!.nftAuction.startAmount).toStrictEqual("999");
+		expect(response.body.data[0]!.nftAuction.expiration.blockHeight).toStrictEqual(1000000);
+		expect(response.body.data[0]!.timestamp.epoch).toStrictEqual(102726648);
+		expect(response.body.data[0]!.timestamp.unix).toStrictEqual(1592827848);
+		expect(response.body.data[0]!.timestamp.human).toStrictEqual("2020-06-22T12:10:48.000Z");
 	});
 
 	it('should call \\"getAuctionById\\" method', async () => {
@@ -102,18 +102,18 @@ describe("API - 1.0 - Exchange/Resources - Auctions", () => {
 		expect(response.body.meta.last).toBe("/nft/exchange/auctions/search?page=1&limit=100&transform=true");
 
 		// Data
-		expect(response.body.data[0].id).toBe("d8177d5c2a3eee46aea48fa5a8ce7c58c43c71909ac6cf9568e11065dc1f544a");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("d8177d5c2a3eee46aea48fa5a8ce7c58c43c71909ac6cf9568e11065dc1f544a");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].nftAuction.nftIds).toStrictEqual([
+		expect(response.body.data[0]!.nftAuction.nftIds).toStrictEqual([
 			"a8016c66d160606e289ed8bab6ce2b2d9916197111e8612257b10e54d83ba827",
 		]);
-		expect(response.body.data[0].nftAuction.startAmount).toStrictEqual("999");
-		expect(response.body.data[0].nftAuction.expiration.blockHeight).toStrictEqual(1000000);
-		expect(response.body.data[0].timestamp.epoch).toStrictEqual(102726648);
-		expect(response.body.data[0].timestamp.unix).toStrictEqual(1592827848);
-		expect(response.body.data[0].timestamp.human).toStrictEqual("2020-06-22T12:10:48.000Z");
+		expect(response.body.data[0]!.nftAuction.startAmount).toStrictEqual("999");
+		expect(response.body.data[0]!.nftAuction.expiration.blockHeight).toStrictEqual(1000000);
+		expect(response.body.data[0]!.timestamp.epoch).toStrictEqual(102726648);
+		expect(response.body.data[0]!.timestamp.unix).toStrictEqual(1592827848);
+		expect(response.body.data[0]!.timestamp.human).toStrictEqual("2020-06-22T12:10:48.000Z");
 	});
 
 	it('should call \\"getAllCanceledAuctions\\" method', async () => {
@@ -133,16 +133,16 @@ describe("API - 1.0 - Exchange/Resources - Auctions", () => {
 		expect(response.body.meta.last).toBe("/nft/exchange/auctions/canceled?page=1&limit=100&transform=true");
 
 		// Data
-		expect(response.body.data[0].id).toBe("808a080c53dcc77ec01ce0fe76598b4b3d1bacfabee082dada636784b115a150");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("808a080c53dcc77ec01ce0fe76598b4b3d1bacfabee082dada636784b115a150");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].nftAuctionCancel.auctionId).toStrictEqual(
+		expect(response.body.data[0]!.nftAuctionCancel.auctionId).toStrictEqual(
 			"58dc9625ff7190dc3ff2dbf541a2bb2c8a85366f2cbe95d21ec9b8970f41d086",
 		);
-		expect(response.body.data[0].timestamp.epoch).toStrictEqual(102726256);
-		expect(response.body.data[0].timestamp.unix).toStrictEqual(1592827456);
-		expect(response.body.data[0].timestamp.human).toStrictEqual("2020-06-22T12:04:16.000Z");
+		expect(response.body.data[0]!.timestamp.epoch).toStrictEqual(102726256);
+		expect(response.body.data[0]!.timestamp.unix).toStrictEqual(1592827456);
+		expect(response.body.data[0]!.timestamp.human).toStrictEqual("2020-06-22T12:04:16.000Z");
 	});
 
 	it('should call \\"getCanceledAuctionById\\" method', async () => {

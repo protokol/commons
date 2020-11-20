@@ -23,16 +23,16 @@ describe("API - 1.0 - Base/Resources - Burns", () => {
 		expect(response.body.meta.last).toBe("/nft/burns?page=1&limit=100&transform=true");
 
 		// Data
-		expect(response.body.data[0].id).toBe("e2bcb7183940b6998701c467077c419b2cdc84eddcfbe632ce1473cda0e5b8e3");
-		expect(response.body.data[0].senderPublicKey).toBe(
+		expect(response.body.data[0]!.id).toBe("e2bcb7183940b6998701c467077c419b2cdc84eddcfbe632ce1473cda0e5b8e3");
+		expect(response.body.data[0]!.senderPublicKey).toBe(
 			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
 		);
-		expect(response.body.data[0].nftBurn.nftId).toStrictEqual(
+		expect(response.body.data[0]!.nftBurn.nftId).toStrictEqual(
 			"6f252f11b119e00a5364d37670623d1b6be562f577984c819237ca4668e2897e",
 		);
-		expect(response.body.data[0].timestamp.epoch).toStrictEqual(102725680);
-		expect(response.body.data[0].timestamp.unix).toStrictEqual(1592826880);
-		expect(response.body.data[0].timestamp.human).toStrictEqual("2020-06-22T11:54:40.000Z");
+		expect(response.body.data[0]!.timestamp.epoch).toStrictEqual(102725680);
+		expect(response.body.data[0]!.timestamp.unix).toStrictEqual(1592826880);
+		expect(response.body.data[0]!.timestamp.human).toStrictEqual("2020-06-22T11:54:40.000Z");
 	});
 
 	it('should call \\"get\\" method', async () => {
