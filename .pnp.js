@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@arkecosystem/core", "npm:3.0.0-next.9"],
             ["@arkecosystem/core-cli", "npm:3.0.0-next.9"],
-            ["@sindresorhus/tsconfig", "npm:0.7.0"],
+            ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.4"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:26.0.15"],
@@ -2584,7 +2584,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/guardian-crypto", "npm:1.0.0-beta.33"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.50"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.50"],
-            ["@sindresorhus/tsconfig", "npm:0.7.0"],
+            ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.5"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/hapi__boom", "npm:7.4.1"],
@@ -2628,7 +2628,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@protokol/client", "workspace:packages/client"],
             ["@arkecosystem/client", "npm:2.0.0"],
-            ["@sindresorhus/tsconfig", "npm:0.7.0"],
+            ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.5"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/hapi__boom", "npm:7.4.1"],
@@ -2677,7 +2677,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@protokol/commons", "workspace:."],
             ["@arkecosystem/core", "npm:3.0.0-next.9"],
             ["@arkecosystem/core-cli", "npm:3.0.0-next.9"],
-            ["@sindresorhus/tsconfig", "npm:0.7.0"],
+            ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/eslint", "npm:7.2.4"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:26.0.15"],
@@ -2879,7 +2879,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/utils/",
           "packageDependencies": [
             ["@protokol/utils", "workspace:packages/utils"],
-            ["@sindresorhus/tsconfig", "npm:0.7.0"],
+            ["@sindresorhus/tsconfig", "npm:0.8.0"],
             ["@types/hapi__boom", "npm:7.4.1"],
             ["@types/hapi__joi", "npm:17.1.6"],
             ["@types/is-url-superb", "npm:3.0.0"],
@@ -2951,10 +2951,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@sindresorhus/tsconfig", [
-        ["npm:0.7.0", {
-          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-0.7.0-42b9b75aea-e0092defcf.zip/node_modules/@sindresorhus/tsconfig/",
+        ["npm:0.8.0", {
+          "packageLocation": "./.yarn/cache/@sindresorhus-tsconfig-npm-0.8.0-8c813be5dd-5131f97d6b.zip/node_modules/@sindresorhus/tsconfig/",
           "packageDependencies": [
-            ["@sindresorhus/tsconfig", "npm:0.7.0"]
+            ["@sindresorhus/tsconfig", "npm:0.8.0"]
           ],
           "linkType": "HARD",
         }]
