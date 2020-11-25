@@ -1,7 +1,7 @@
 {
 	"name": "@protokol/client",
 	"description": "A Light TypeScript Client Supporting Protokol.com Transactions And Public ARK REST API",
-	"version": "1.0.0-beta.35",
+	"version": "1.0.0-beta.36",
 	"homepage": "https://docs.protokol.com/",
 	"bugs": {
 		"url": "https://github.com/protokol/commons/issues"
@@ -38,7 +38,7 @@
 		"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
 	},
 	"dependencies": {
-		"@arkecosystem/client": "^2.0.0",
+		"@arkecosystem/client": "2.0.0",
 		"is-url-superb": "^4.0.0",
 		"ky": "^0.25.0",
 		"ky-universal": "^0.8.2",
