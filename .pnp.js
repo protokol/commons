@@ -2685,7 +2685,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-prettier", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:3.1.4"],
             ["eslint-plugin-simple-import-sort", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:6.0.1"],
             ["got", "npm:11.8.0"],
-            ["is-url-superb", "npm:4.0.0"],
+            ["is-url-superb", "npm:5.0.0"],
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
             ["jest-localstorage-mock", "npm:2.4.3"],
@@ -8536,6 +8536,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-url-superb-npm-4.0.0-71f6df9bc1-619bcd3977.zip/node_modules/is-url-superb/",
           "packageDependencies": [
             ["is-url-superb", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/is-url-superb-npm-5.0.0-b35332856b-5aaafcea83.zip/node_modules/is-url-superb/",
+          "packageDependencies": [
+            ["is-url-superb", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
