@@ -7564,7 +7564,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"is-url-superb@npm:*":
+"is-url-superb@npm:*, is-url-superb@npm:^5.0.0":
   version: 5.0.0
   resolution: "is-url-superb@npm:5.0.0"
   checksum: 5aaafcea83ba19a3734e11accc0ea9c7c6fe991f0207e6f0485557f665f58a8ab459eb52e17267617b82fa56908f2e65306d4861ea6f5540a351e2ebb4c4d0d5
@@ -7575,13 +7575,6 @@ fsevents@~2.1.2:
   version: 4.0.0
   resolution: "is-url-superb@npm:4.0.0"
   checksum: 619bcd3977f5666c7236e28f566e364ea896b64a9f82c6ddcb9567a9b4dabeeb8c4060e5c7bf1052281a4cff7c6ab5d8dd11e099418710901b06779636e6e328
-  languageName: node
-  linkType: hard
-
-"is-url-superb@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "is-url-superb@npm:5.0.0"
-  checksum: 5aaafcea83ba19a3734e11accc0ea9c7c6fe991f0207e6f0485557f665f58a8ab459eb52e17267617b82fa56908f2e65306d4861ea6f5540a351e2ebb4c4d0d5
   languageName: node
   linkType: hard
 
@@ -10461,13 +10454,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-cursor@npm:^2.5.2":
-  version: 2.5.2
-  resolution: "pg-cursor@npm:2.5.2"
-  checksum: 1735cfa9a6f16566cd91c20517a321dd0516f57ce321be170a2cd4c4bcc67fd3e9b7e5326c2d40b30e82a3d542eafece7717a6fd236b6c05b9004e745f33c9be
-  languageName: node
-  linkType: hard
-
 "pg-int8@npm:1.0.1":
   version: 1.0.1
   resolution: "pg-int8@npm:1.0.1"
@@ -10491,7 +10477,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-query-stream@npm:^3.0.4, pg-query-stream@npm:latest":
+"pg-query-stream@npm:^3.0.4":
   version: 3.4.2
   resolution: "pg-query-stream@npm:3.4.2"
   dependencies:
@@ -10500,7 +10486,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-query-stream@npm:^4.0.0":
+"pg-query-stream@npm:^4.0.0, pg-query-stream@npm:latest":
   version: 4.0.0
   resolution: "pg-query-stream@npm:4.0.0"
   dependencies:

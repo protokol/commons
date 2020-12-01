@@ -75,9 +75,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-extended", "npm:0.11.5"],
             ["nock", "npm:13.0.5"],
             ["npm-check-updates", "npm:10.2.2"],
-            ["pg", "virtual:f9376621cd59bdda7fb9564a11020f866b7cd377c643467ed7ed5fb832b2ebb8078cc36028d5d65985b29a7ca840c9f22b04146c29bf2a60289a51e7b4b100d7#npm:8.5.1"],
+            ["pg", "virtual:b99730336d6765a5cc1c2693ed29a397bb5ef3a89e7cb787e02c1c75dd1195ef8703401f7e975b778ff0c595d6c6227c4bdbae8d59e98e1f97c0ad218f9aac42#npm:8.5.1"],
             ["pg-query-stream", "npm:4.0.0"],
-            ["prettier", "npm:2.2.0"],
+            ["prettier", "npm:2.2.1"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:26.4.4"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"],
@@ -2830,9 +2830,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-extended", "npm:0.11.5"],
             ["nock", "npm:13.0.5"],
             ["npm-check-updates", "npm:10.2.2"],
-            ["pg", "virtual:f9376621cd59bdda7fb9564a11020f866b7cd377c643467ed7ed5fb832b2ebb8078cc36028d5d65985b29a7ca840c9f22b04146c29bf2a60289a51e7b4b100d7#npm:8.5.1"],
+            ["pg", "virtual:b99730336d6765a5cc1c2693ed29a397bb5ef3a89e7cb787e02c1c75dd1195ef8703401f7e975b778ff0c595d6c6227c4bdbae8d59e98e1f97c0ad218f9aac42#npm:8.5.1"],
             ["pg-query-stream", "npm:4.0.0"],
-            ["prettier", "npm:2.2.0"],
+            ["prettier", "npm:2.2.1"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:26.4.4"],
             ["typescript", "patch:typescript@npm%3A4.1.2#builtin<compat/typescript>::version=4.1.2&hash=cc6730"],
@@ -11989,14 +11989,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pg", "virtual:b99730336d6765a5cc1c2693ed29a397bb5ef3a89e7cb787e02c1c75dd1195ef8703401f7e975b778ff0c595d6c6227c4bdbae8d59e98e1f97c0ad218f9aac42#npm:8.5.1"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:2.5.2", {
-          "packageLocation": "./.yarn/cache/pg-cursor-npm-2.5.2-b99730336d-1735cfa9a6.zip/node_modules/pg-cursor/",
-          "packageDependencies": [
-            ["pg-cursor", "npm:2.5.2"],
-            ["pg", "virtual:f9376621cd59bdda7fb9564a11020f866b7cd377c643467ed7ed5fb832b2ebb8078cc36028d5d65985b29a7ca840c9f22b04146c29bf2a60289a51e7b4b100d7#npm:8.5.1"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["pg-int8", [
@@ -12044,14 +12036,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/pg-query-stream-npm-3.4.2-cbed9c8ab1-4eae6fbb5a.zip/node_modules/pg-query-stream/",
           "packageDependencies": [
             ["pg-query-stream", "npm:3.4.2"],
-            ["pg-cursor", "npm:2.5.2"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/pg-query-stream-npm-4.0.0-6b121c8a86-17447fd0c0.zip/node_modules/pg-query-stream/",
-          "packageDependencies": [
-            ["pg-query-stream", "npm:4.0.0"],
             ["pg-cursor", "npm:2.5.2"]
           ],
           "linkType": "HARD",
