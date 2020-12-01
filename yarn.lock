@@ -2388,7 +2388,7 @@ __metadata:
     eslint-plugin-prettier: ^3.1.4
     eslint-plugin-simple-import-sort: ^6.0.0
     got: ^11.8.0
-    is-url-superb: ^4.0.0
+    is-url-superb: ^5.0.0
     jest: ^26.6.3
     jest-extended: ^0.11.5
     jest-localstorage-mock: ^2.4.3
@@ -2434,7 +2434,7 @@ __metadata:
     nock: ^13.0.4
     npm-check-updates: ^10.0.0
     pg: ^8.2.1
-    pg-query-stream: ^3.2.3
+    pg-query-stream: ^4.0.0
     prettier: ^2.2.0
     rimraf: ^3.0.2
     ts-jest: ~26.4.0
@@ -7578,6 +7578,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"is-url-superb@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "is-url-superb@npm:5.0.0"
+  checksum: 5aaafcea83ba19a3734e11accc0ea9c7c6fe991f0207e6f0485557f665f58a8ab459eb52e17267617b82fa56908f2e65306d4861ea6f5540a351e2ebb4c4d0d5
+  languageName: node
+  linkType: hard
+
 "is-windows@npm:^1.0.2":
   version: 1.0.2
   resolution: "is-windows@npm:1.0.2"
@@ -10454,6 +10461,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"pg-cursor@npm:^2.5.2":
+  version: 2.5.2
+  resolution: "pg-cursor@npm:2.5.2"
+  checksum: 1735cfa9a6f16566cd91c20517a321dd0516f57ce321be170a2cd4c4bcc67fd3e9b7e5326c2d40b30e82a3d542eafece7717a6fd236b6c05b9004e745f33c9be
+  languageName: node
+  linkType: hard
+
 "pg-int8@npm:1.0.1":
   version: 1.0.1
   resolution: "pg-int8@npm:1.0.1"
@@ -10477,7 +10491,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-query-stream@npm:^3.0.4, pg-query-stream@npm:^3.2.3":
+"pg-query-stream@npm:^3.0.4, pg-query-stream@npm:latest":
   version: 3.4.2
   resolution: "pg-query-stream@npm:3.4.2"
   dependencies:
@@ -10486,7 +10500,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"pg-query-stream@npm:latest":
+"pg-query-stream@npm:^4.0.0":
   version: 4.0.0
   resolution: "pg-query-stream@npm:4.0.0"
   dependencies:
