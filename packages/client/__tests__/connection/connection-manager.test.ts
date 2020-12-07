@@ -37,6 +37,6 @@ describe("ConnectionManager tests", () => {
 
 		const randomConn = connManager.getRandomConnection();
 
-		expect(dummyPeers.map((x) => new ProtokolConnection(`http://${x.ip}:4003/api`))).toContainEqual(randomConn);
+		expect(dummyPeers.map((x) => new ProtokolConnection(`http://${x.ip}:4003/api`))).toContainEqual(randomConn!);
 	});
 });

@@ -29,6 +29,8 @@ export const mockBaseConfigurations = (host: string) => {
 							minItems: 1,
 							maxItems: 10,
 						},
+						nftCollectionJsonSchemaByteSize: 1,
+						nftTokenAttributesByteSize: 1,
 					},
 				},
 				transactions: {

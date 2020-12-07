@@ -35,6 +35,8 @@ describe("API - 1.0 - Base/Resources - Configurations", () => {
 				minItems: 1,
 				maxItems: 10,
 			},
+			nftCollectionJsonSchemaByteSize: 1,
+			nftTokenAttributesByteSize: 1,
 		});
 
 		// Transactions responses
