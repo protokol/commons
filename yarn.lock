@@ -2441,7 +2441,7 @@ __metadata:
     "@oclif/plugin-help": ^3
     "@protokol/guardian-crypto": 1.0.0-beta.34
     "@protokol/nft-base-crypto": 1.0.0-beta.51
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.51
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.52
     "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
@@ -2702,6 +2702,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/nft-exchange-crypto@npm:1.0.0-beta.52":
+  version: 1.0.0-beta.52
+  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.52"
+  dependencies:
+    "@arkecosystem/crypto": 3.0.0-next.14
+    "@protokol/utils": 1.0.0-beta.37
+    bytebuffer: ^5.0.1
+  checksum: 588ec02e74fdf821046ff2c8e7ac0fbddab152f3298976cd896b8106ebf7c0fa9f1c891cf7a9b306d3985d0b9744c20d8101f2e4c4760375b98d891911691809
+  languageName: node
+  linkType: hard
+
 "@protokol/nft-exchange-transactions@npm:1.0.0-beta.51, @protokol/nft-exchange-transactions@npm:beta":
   version: 1.0.0-beta.51
   resolution: "@protokol/nft-exchange-transactions@npm:1.0.0-beta.51"
@@ -2747,6 +2758,13 @@ __metadata:
     typescript: ~4.1.0
   languageName: unknown
   linkType: soft
+
+"@protokol/utils@npm:1.0.0-beta.37":
+  version: 1.0.0-beta.37
+  resolution: "@protokol/utils@npm:1.0.0-beta.37"
+  checksum: d8f1bf81fd36448f54c9928041f965d2bd8f5b2dadab6b08a3cec5b2d8660cf720200fefeb55c6b7425177bb9905aaec694391b6882fd83fc572e03a3f8969e2
+  languageName: node
+  linkType: hard
 
 "@samverschueren/stream-to-observable@npm:^0.3.0":
   version: 0.3.1
