@@ -552,7 +552,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:3.0.0-next.16, @arkecosystem/crypto@npm:^3.0.0-next.14, @arkecosystem/crypto@npm:^3.0.0-next.16":
+"@arkecosystem/crypto@npm:3.0.0-next.16, @arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.14, @arkecosystem/crypto@npm:^3.0.0-next.16":
   version: 3.0.0-next.16
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.16"
   dependencies:
@@ -2441,7 +2441,7 @@ __metadata:
     "@oclif/errors": ^1.3.4
     "@oclif/plugin-help": ^3
     "@protokol/guardian-crypto": 1.0.0-beta.35
-    "@protokol/nft-base-crypto": 1.0.0-beta.52
+    "@protokol/nft-base-crypto": 1.0.0-beta.55
     "@protokol/nft-exchange-crypto": 1.0.0-beta.52
     "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.5
@@ -2660,6 +2660,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@protokol/nft-base-crypto@npm:1.0.0-beta.55":
+  version: 1.0.0-beta.55
+  resolution: "@protokol/nft-base-crypto@npm:1.0.0-beta.55"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.37
+    bytebuffer: ^5.0.1
+  checksum: 49c68ca03dcb8388b1100928bffef8475661a71c00d16bc3b80117b12ffc376a23fb48dd2d7ea48b118a017f5cfefb8563882b32c9ff542d9379db4429a18968
+  languageName: node
+  linkType: hard
+
 "@protokol/nft-base-transactions@npm:1.0.0-beta.52, @protokol/nft-base-transactions@npm:beta":
   version: 1.0.0-beta.52
   resolution: "@protokol/nft-base-transactions@npm:1.0.0-beta.52"
@@ -2719,7 +2730,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@protokol/utils@1.0.0-beta.37, @protokol/utils@workspace:packages/utils":
+"@protokol/utils@1.0.0-beta.37, @protokol/utils@^1.0.0-beta.37, @protokol/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@protokol/utils@workspace:packages/utils"
   dependencies:
