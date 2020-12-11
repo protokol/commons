@@ -1,46 +1,25 @@
 import * as MagistrateCrypto from "@arkecosystem/core-magistrate-crypto";
 import { Transactions } from "@arkecosystem/crypto";
 import * as GuardianCrypto from "@protokol/guardian-crypto";
-import { ARKCrypto as ARKGuardianCrypto } from "@protokol/guardian-crypto";
 import * as NFTBaseCrypto from "@protokol/nft-base-crypto";
-import { ARKCrypto as ARKBaseNFTCrypto } from "@protokol/nft-base-crypto";
 import * as NFTExchangeCrypto from "@protokol/nft-exchange-crypto";
-import { ARKCrypto as ARKExchangeNFTCrypto } from "@protokol/nft-exchange-crypto";
 
 import { TransactionType } from "./enums";
 
 Transactions.TransactionRegistry.registerTransactionType(MagistrateCrypto.Transactions.EntityTransaction);
-ARKBaseNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTBaseCrypto.Transactions.NFTRegisterCollectionTransaction,
-);
-ARKBaseNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTBaseCrypto.Transactions.NFTCreateTransaction,
-);
-ARKBaseNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTBaseCrypto.Transactions.NFTTransferTransaction,
-);
-ARKBaseNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTBaseCrypto.Transactions.NFTBurnTransaction,
-);
-ARKExchangeNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTExchangeCrypto.Transactions.NFTAuctionTransaction,
-);
-ARKExchangeNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTExchangeCrypto.Transactions.NFTAuctionCancelTransaction,
-);
-ARKExchangeNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTExchangeCrypto.Transactions.NFTBidTransaction,
-);
-ARKExchangeNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTExchangeCrypto.Transactions.NFTBidCancelTransaction,
-);
-ARKExchangeNFTCrypto.Transactions.TransactionRegistry.registerTransactionType(
-	NFTExchangeCrypto.Transactions.NFTAcceptTradeTransaction,
-);
-ARKGuardianCrypto.Transactions.TransactionRegistry.registerTransactionType(
+Transactions.TransactionRegistry.registerTransactionType(NFTBaseCrypto.Transactions.NFTRegisterCollectionTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTBaseCrypto.Transactions.NFTCreateTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTBaseCrypto.Transactions.NFTTransferTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTBaseCrypto.Transactions.NFTBurnTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTExchangeCrypto.Transactions.NFTAuctionTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTExchangeCrypto.Transactions.NFTAuctionCancelTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTExchangeCrypto.Transactions.NFTBidTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTExchangeCrypto.Transactions.NFTBidCancelTransaction);
+Transactions.TransactionRegistry.registerTransactionType(NFTExchangeCrypto.Transactions.NFTAcceptTradeTransaction);
+Transactions.TransactionRegistry.registerTransactionType(
 	GuardianCrypto.Transactions.GuardianGroupPermissionsTransaction,
 );
-ARKGuardianCrypto.Transactions.TransactionRegistry.registerTransactionType(
+Transactions.TransactionRegistry.registerTransactionType(
 	GuardianCrypto.Transactions.GuardianUserPermissionsTransaction,
 );
 
