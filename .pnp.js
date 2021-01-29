@@ -2712,7 +2712,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@oclif/command", "virtual:94fac21a1a2025b70adfaefdf38827ffccf69dcfc9c3954fa9b39e3d15961f035ebaa812536ee9b164cb38c3f84cf0b130529ad59b30964af02dbc0d3619943e#npm:1.8.0"],
             ["@oclif/errors", "npm:1.3.4"],
             ["@oclif/plugin-help", "npm:3.2.0"],
-            ["@protokol/guardian-crypto", "npm:1.0.0-beta.37"],
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.38"],
             ["@protokol/nft-base-crypto", "npm:1.0.0-beta.56"],
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.56"],
             ["@sindresorhus/tsconfig", "npm:0.8.0"],
@@ -2862,6 +2862,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protokol-guardian-crypto-npm-1.0.0-beta.37-6cc0045a5e-b951e53170.zip/node_modules/@protokol/guardian-crypto/",
           "packageDependencies": [
             ["@protokol/guardian-crypto", "npm:1.0.0-beta.37"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.38", {
+          "packageLocation": "./.yarn/cache/@protokol-guardian-crypto-npm-1.0.0-beta.38-501a978a87-e5dab5aa08.zip/node_modules/@protokol/guardian-crypto/",
+          "packageDependencies": [
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.38"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.16"],
             ["@protokol/utils", "workspace:packages/utils"],
             ["bytebuffer", "npm:5.0.1"]
