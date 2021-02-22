@@ -445,7 +445,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.21":
+"@arkecosystem/crypto@npm:^3.0.0-next, @arkecosystem/crypto@npm:^3.0.0-next.21, @arkecosystem/crypto@npm:next":
   version: 3.0.0-next.21
   resolution: "@arkecosystem/crypto@npm:3.0.0-next.21"
   dependencies:
@@ -8367,7 +8367,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"joi@npm:^17.3.0":
+"joi@npm:^17.3.0, joi@npm:latest":
   version: 17.4.0
   resolution: "joi@npm:17.4.0"
   dependencies:

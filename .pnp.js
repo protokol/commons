@@ -360,6 +360,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/core-kernel", "npm:3.0.0-next.21"],
             ["@arkecosystem/core-magistrate-crypto", "npm:3.0.0-next.21"],
             ["@arkecosystem/core-magistrate-transactions", "npm:3.0.0-next.21"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
             ["@hapi/boom", "npm:9.1.1"],
             ["@hapi/hapi", "npm:20.1.0"],
             ["joi", "npm:17.4.0"]
@@ -480,6 +481,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@arkecosystem/crypto", "npm:3.0.0-next.21"],
             ["bytebuffer", "npm:5.0.1"],
             ["fs-extra", "npm:8.1.0"],
+            ["joi", "npm:17.4.0"],
             ["msgpack-lite", "npm:0.1.26"],
             ["ora", "npm:4.1.1"],
             ["pg-query-stream", "npm:3.4.2"],
