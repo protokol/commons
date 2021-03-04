@@ -2281,7 +2281,7 @@ __metadata:
     "@oclif/plugin-help": ^3
     "@protokol/guardian-crypto": 1.0.0-beta.39
     "@protokol/nft-base-crypto": 1.0.0-beta.57
-    "@protokol/nft-exchange-crypto": 1.0.0-beta.57
+    "@protokol/nft-exchange-crypto": 1.0.0-beta.58
     "@sindresorhus/tsconfig": ^0.8.0
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
@@ -2535,6 +2535,17 @@ __metadata:
     "@protokol/utils": ^1.0.0-beta.37
     bytebuffer: ^5.0.1
   checksum: 8d991bf654104a4bfae684205d7a9b7b5e7ebcd1c44869140743598d4ba7aaaa93c08a902cf17742c6c500469f83843f995017d01202672d317378aeb6c37f92
+  languageName: node
+  linkType: hard
+
+"@protokol/nft-exchange-crypto@npm:1.0.0-beta.58":
+  version: 1.0.0-beta.58
+  resolution: "@protokol/nft-exchange-crypto@npm:1.0.0-beta.58"
+  dependencies:
+    "@arkecosystem/crypto": ^3.0.0-next
+    "@protokol/utils": ^1.0.0-beta.37
+    bytebuffer: ^5.0.1
+  checksum: 1d61918a6beec53452fbe545112d25a00a38a784748977a28e3ab6f309af935b4ac5003ced9d5a0856b288af9dd5a0bfbef96a00b60cc7d2268c0a6dc870b303
   languageName: node
   linkType: hard
 
