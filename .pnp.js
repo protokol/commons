@@ -2792,7 +2792,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
             ["jest-localstorage-mock", "npm:2.4.7"],
-            ["ky", "npm:0.25.1"],
+            ["ky", "npm:0.27.0"],
             ["ky-universal", "virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.8.2"],
             ["lodash.orderby", "npm:4.6.0"],
             ["nock", "npm:13.0.10"],
@@ -10066,10 +10066,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:0.25.1", {
-          "packageLocation": "./.yarn/cache/ky-npm-0.25.1-40ea38970a-af13618fd3.zip/node_modules/ky/",
+        ["npm:0.27.0", {
+          "packageLocation": "./.yarn/cache/ky-npm-0.27.0-c7615cba16-2fa01aa187.zip/node_modules/ky/",
           "packageDependencies": [
-            ["ky", "npm:0.25.1"]
+            ["ky", "npm:0.27.0"]
           ],
           "linkType": "HARD",
         }]
@@ -10108,7 +10108,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ky", null],
             ["@types/web-streams-polyfill", null],
             ["abort-controller", "npm:3.0.0"],
-            ["ky", "npm:0.25.1"],
+            ["ky", "npm:0.27.0"],
             ["node-fetch", "npm:3.0.0-beta.9"],
             ["web-streams-polyfill", null]
           ],
@@ -11205,7 +11205,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.0", {
-          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.0-b3c3175e0b/node_modules/ngrok/",
+          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.0-b3c3175e0b-7edb48c174.zip/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.0"],
             ["@types/node", "npm:8.10.66"],
@@ -12774,7 +12774,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-09d6292362.zip/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
