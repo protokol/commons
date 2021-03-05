@@ -7,8 +7,7 @@ export interface Assets {
 	ownerPublicKey: string;
 	senderPublicKey: string;
 	collectionId: string;
-	// eslint-disable-next-line @typescript-eslint/member-ordering
-	[attributes: string]: any;
+	attributes: object;
 	timestamp: Timestamp;
 }
 
@@ -23,8 +22,9 @@ export interface AssetsWallet {
 				name: string;
 				description: string;
 				maximumSupply: number;
-				// eslint-disable-next-line @typescript-eslint/member-ordering
-				[jsonSchema: string]: any;
+				jsonSchema: object;
+				allowedIssuers?: string[];
+				metadata?: object;
 			};
 		}[];
 		assetsIds: string[];

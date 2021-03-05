@@ -8,9 +8,9 @@ export interface Collections {
 	name: string;
 	description: string;
 	maximumSupply: number;
-	// eslint-disable-next-line @typescript-eslint/member-ordering
-	[jsonSchema: string]: any;
+	jsonSchema: object;
 	allowedIssuers?: string[];
+	metadata?: object;
 	timestamp: Timestamp;
 }
 
@@ -22,8 +22,7 @@ export interface AllCollectionsQuery extends ApiQuery {
 export interface Schema {
 	id: string;
 	senderPublicKey: string;
-	// eslint-disable-next-line @typescript-eslint/member-ordering
-	[properties: string]: any;
+	jsonSchema: object;
 }
 
 export interface CollectionsWallet {
@@ -37,8 +36,9 @@ export interface CollectionsWallet {
 				name: string;
 				description: string;
 				maximumSupply: number;
-				// eslint-disable-next-line @typescript-eslint/member-ordering
-				[jsonSchema: string]: any;
+				jsonSchema: object;
+				allowedIssuers?: string[];
+				metadata?: object;
 			};
 		}[];
 		assetsIds: string[];
@@ -54,7 +54,6 @@ export interface CollectionsAsset {
 	ownerPublicKey: string;
 	senderPublicKey: string;
 	collectionId: string;
-	// eslint-disable-next-line @typescript-eslint/member-ordering
-	[attributes: string]: any;
+	attributes: object;
 	timestamp: Timestamp;
 }
