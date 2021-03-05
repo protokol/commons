@@ -2382,7 +2382,7 @@ __metadata:
     jest-extended: ^0.11.5
     jest-localstorage-mock: ^2.4.3
     ky: ^0.25.0
-    ky-universal: ^0.8.2
+    ky-universal: ^0.9.0
     lodash.orderby: ^4.6.0
     nock: ^13.0.5
     npm-check-updates: ^11.0.0
@@ -8765,6 +8765,22 @@ fsevents@~2.1.2:
     web-streams-polyfill:
       optional: true
   checksum: da33c771eaa63348d586846ce706c03c42f4ab475c5661609712e0e62078d11bbbc98834257dd3b81838e094613800724756c23550e295f6e8aa0dbc67d16f43
+  languageName: node
+  linkType: hard
+
+"ky-universal@npm:^0.9.0":
+  version: 0.9.1
+  resolution: "ky-universal@npm:0.9.1"
+  dependencies:
+    abort-controller: ^3.0.0
+    node-fetch: 3.0.0-beta.9
+  peerDependencies:
+    ky: ">=0.26.0"
+    web-streams-polyfill: ">=3.0.1"
+  peerDependenciesMeta:
+    web-streams-polyfill:
+      optional: true
+  checksum: 424e6e57e7fea8d7e3e8e16e6586a21c0bd6dc7b8036f89f6e3506bbe63e6b133a321c7a23efbc96023b6b6ff090260d636d32a9586145579b2ae8d45aa382cc
   languageName: node
   linkType: hard
 

@@ -2793,7 +2793,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-extended", "npm:0.11.5"],
             ["jest-localstorage-mock", "npm:2.4.7"],
             ["ky", "npm:0.25.1"],
-            ["ky-universal", "virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.8.2"],
+            ["ky-universal", "virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.9.1"],
             ["lodash.orderby", "npm:4.6.0"],
             ["nock", "npm:13.0.10"],
             ["npm-check-updates", "npm:11.1.10"],
@@ -10082,6 +10082,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:0.9.1", {
+          "packageLocation": "./.yarn/cache/ky-universal-npm-0.9.1-6487443b64-424e6e57e7.zip/node_modules/ky-universal/",
+          "packageDependencies": [
+            ["ky-universal", "npm:0.9.1"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["virtual:209fe4f7240ea92f98b62f666c847769f96f763e7ceaa077035307eed7f53bcba5d7d5ec2691c5a964d9ee7695c2e1a618789616b75325aa53c104a184539d70#npm:0.8.2", {
           "packageLocation": "./.yarn/$$virtual/ky-universal-virtual-68bde43276/0/cache/ky-universal-npm-0.8.2-66bbf1e939-da33c771ea.zip/node_modules/ky-universal/",
           "packageDependencies": [
@@ -10101,10 +10108,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.8.2", {
-          "packageLocation": "./.yarn/$$virtual/ky-universal-virtual-ad5e2869c8/0/cache/ky-universal-npm-0.8.2-66bbf1e939-da33c771ea.zip/node_modules/ky-universal/",
+        ["virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.9.1", {
+          "packageLocation": "./.yarn/$$virtual/ky-universal-virtual-d27afcfc34/0/cache/ky-universal-npm-0.9.1-6487443b64-424e6e57e7.zip/node_modules/ky-universal/",
           "packageDependencies": [
-            ["ky-universal", "virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.8.2"],
+            ["ky-universal", "virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.9.1"],
             ["@types/ky", null],
             ["@types/web-streams-polyfill", null],
             ["abort-controller", "npm:3.0.0"],
@@ -11205,7 +11212,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.0", {
-          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.0-b3c3175e0b/node_modules/ngrok/",
+          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.0-b3c3175e0b-7edb48c174.zip/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.0"],
             ["@types/node", "npm:8.10.66"],
@@ -12774,7 +12781,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-09d6292362.zip/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
