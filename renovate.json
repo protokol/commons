@@ -3,8 +3,8 @@
 	"baseBranches": ["develop"],
 	"packageRules": [
 		{
-			"packagePatterns": ["^@arkecosystem"],
-			"groupName": "ark packages"
+			"packagePatterns": ["^@arkecosystem", "^@protokol"],
+			"groupName": "ark and protokol packages"
 		}
 	]
 }
