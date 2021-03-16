@@ -88,6 +88,48 @@ describe("API - 1.0 - Base/Resources - Assets", () => {
 		);
 	});
 
+	it('should call \\"wallet assets\\" method', async () => {
+		const response = await resource.walletAssets(
+			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+		);
+
+		// Pagination
+		// expect(response.body.meta.totalCountIsEstimate).toBeTruthy(); // add to arkecosystem client
+		expect(response.body.meta.count).toBe(1);
+		expect(response.body.meta.pageCount).toBe(1);
+		expect(response.body.meta.totalCount).toBe(1);
+		expect(response.body.meta.next).toBeNull();
+		expect(response.body.meta.previous).toBeNull();
+		expect(response.body.meta.self).toBe(
+			"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?page=1&limit=100&transform=true",
+		);
+		expect(response.body.meta.first).toBe(
+			"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?page=1&limit=100&transform=true",
+		);
+		expect(response.body.meta.last).toBe(
+			"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?page=1&limit=100&transform=true",
+		);
+
+		// Data
+		expect(response.body.data[0]!.id).toBe("85ae652027c44696bb7b5188f951b287ed507312e827c0f0e71a363188928e84");
+		expect(response.body.data[0]!.ownerPublicKey).toBe(
+			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+		);
+		expect(response.body.data[0]!.senderPublicKey).toBe(
+			"03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+		);
+		expect(response.body.data[0]!.collectionId).toStrictEqual(
+			"76b406ad81e2731b64325d6024a67b38a0ef7c67905e6e7eb03a746cf977042a",
+		);
+		expect(response.body.data[0]!.attributes).toStrictEqual({
+			number: 100,
+			string: "Card",
+		});
+		expect(response.body.data[0]!.timestamp.epoch).toStrictEqual(124666048);
+		expect(response.body.data[0]!.timestamp.unix).toStrictEqual(1614767248);
+		expect(response.body.data[0]!.timestamp.human).toStrictEqual("2021-03-03T10:27:28.000Z");
+	});
+
 	it('should call \\"searchByAsset\\" method', async () => {
 		const response = await resource.searchByAsset({
 			name: "Antonio Caracciolo",

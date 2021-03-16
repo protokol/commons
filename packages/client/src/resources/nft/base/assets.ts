@@ -20,6 +20,13 @@ export class Assets extends Resource {
 		return this.sendGet(`nft/assets/${id}/wallets`);
 	}
 
+	public async walletAssets(
+		publicKey: string,
+		query?: AllAssetsQuery,
+	): Promise<ApiResponseWithPagination<AssetsResource[]>> {
+		return this.sendGet(`nft/assets/wallet/${publicKey}`, query);
+	}
+
 	public async searchByAsset(
 		payload: SearchAssetApiBody,
 		query?: ApiQuery,
