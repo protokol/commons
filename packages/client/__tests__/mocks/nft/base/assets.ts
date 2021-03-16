@@ -96,6 +96,35 @@ export const mockAssets = (host: string) => {
 		});
 
 	nock(host)
+		.get("/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37")
+		.reply(200, {
+			meta: {
+				totalCountIsEstimate: true,
+				count: 1,
+				pageCount: 1,
+				totalCount: 1,
+				next: null,
+				previous: null,
+				self:
+					"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?page=1&limit=100&transform=true",
+				first:
+					"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?page=1&limit=100&transform=true",
+				last:
+					"/nft/assets/wallet/03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37?page=1&limit=100&transform=true",
+			},
+			data: [
+				{
+					id: "85ae652027c44696bb7b5188f951b287ed507312e827c0f0e71a363188928e84",
+					ownerPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+					senderPublicKey: "03287bfebba4c7881a0509717e71b34b63f31e40021c321f89ae04f84be6d6ac37",
+					collectionId: "76b406ad81e2731b64325d6024a67b38a0ef7c67905e6e7eb03a746cf977042a",
+					attributes: { number: 100, string: "Card" },
+					timestamp: { epoch: 124666048, unix: 1614767248, human: "2021-03-03T10:27:28.000Z" },
+				},
+			],
+		});
+
+	nock(host)
 		.post("/nft/assets/search")
 		.reply(200, {
 			meta: {
