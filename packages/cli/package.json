@@ -48,9 +48,9 @@
 		"@oclif/command": "^1",
 		"@oclif/errors": "^1.3.4",
 		"@oclif/plugin-help": "^3",
-		"@protokol/guardian-crypto": "1.0.0-beta.39",
-		"@protokol/nft-base-crypto": "1.0.0-beta.59",
-		"@protokol/nft-exchange-crypto": "1.0.0-beta.59",
+		"@protokol/guardian-crypto": "1.0.0-beta.40",
+		"@protokol/nft-base-crypto": "1.0.0-beta.60",
+		"@protokol/nft-exchange-crypto": "1.0.0-beta.60",
 		"fs-extra": "^9.0.1"
 	},
 	"devDependencies": {
