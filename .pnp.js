@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.2.7"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:26.0.22"],
-            ["@types/node", "npm:14.14.37"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/prettier", "npm:2.2.3"],
             ["@types/rimraf", "npm:3.0.0"],
             ["@typescript-eslint/eslint-plugin", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:4.19.0"],
@@ -2726,7 +2726,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/is-url-superb", "npm:3.0.0"],
             ["@types/jest", "npm:26.0.22"],
             ["@types/lodash.orderby", "npm:4.6.6"],
-            ["@types/node", "npm:14.14.37"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/prettier", "npm:2.2.3"],
             ["@types/rimraf", "npm:3.0.0"],
             ["@types/semver", "npm:7.3.4"],
@@ -2770,7 +2770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/is-url-superb", "npm:3.0.0"],
             ["@types/jest", "npm:26.0.22"],
             ["@types/lodash.orderby", "npm:4.6.6"],
-            ["@types/node", "npm:14.14.37"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/prettier", "npm:2.2.3"],
             ["@types/rimraf", "npm:3.0.0"],
             ["@types/semver", "npm:7.3.4"],
@@ -2815,7 +2815,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.2.7"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:26.0.22"],
-            ["@types/node", "npm:14.14.37"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/prettier", "npm:2.2.3"],
             ["@types/rimraf", "npm:3.0.0"],
             ["@typescript-eslint/eslint-plugin", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:4.19.0"],
@@ -3020,7 +3020,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/is-url-superb", "npm:3.0.0"],
             ["@types/jest", "npm:26.0.22"],
             ["@types/lodash.orderby", "npm:4.6.6"],
-            ["@types/node", "npm:14.14.37"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/rimraf", "npm:3.0.0"],
             ["@types/semver", "npm:7.3.4"],
             ["@types/uuid", "npm:8.3.0"],
@@ -3499,6 +3499,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.14.37-6783f920bd-5e2d9baf75.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.14.37"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:14.14.41", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.41-86b32c9f0d-37dfb63964.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:14.14.41"]
           ],
           "linkType": "HARD",
         }],
