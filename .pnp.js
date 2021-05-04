@@ -2729,7 +2729,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:24.3.5"],
             ["eslint-plugin-prettier", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:3.4.0"],
             ["eslint-plugin-simple-import-sort", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:7.0.0"],
-            ["fs-extra", "npm:9.1.0"],
+            ["fs-extra", "npm:10.0.0"],
             ["jest", "npm:26.6.3"],
             ["jest-extended", "npm:0.11.5"],
             ["npm-check-updates", "npm:11.4.1"],
@@ -7614,6 +7614,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["fs-extra", [
+        ["npm:10.0.0", {
+          "packageLocation": "./.yarn/cache/fs-extra-npm-10.0.0-4f8c704115-84632d143f.zip/node_modules/fs-extra/",
+          "packageDependencies": [
+            ["fs-extra", "npm:10.0.0"],
+            ["graceful-fs", "npm:4.2.6"],
+            ["jsonfile", "npm:6.1.0"],
+            ["universalify", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:8.1.0", {
           "packageLocation": "./.yarn/cache/fs-extra-npm-8.1.0-197473387f-056a96d4f5.zip/node_modules/fs-extra/",
           "packageDependencies": [

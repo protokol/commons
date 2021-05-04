@@ -51,7 +51,7 @@
 		"@protokol/guardian-crypto": "1.0.0-beta.40",
 		"@protokol/nft-base-crypto": "1.0.0-beta.60",
 		"@protokol/nft-exchange-crypto": "1.0.0-beta.60",
-		"fs-extra": "^9.0.1"
+		"fs-extra": "^10.0.0"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^1.0.1",
