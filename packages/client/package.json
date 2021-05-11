@@ -1,7 +1,7 @@
 {
 	"name": "@protokol/client",
 	"description": "A Light TypeScript Client Supporting Protokol.com Transactions And Public ARK REST API",
-	"version": "1.0.0-beta.39",
+	"version": "1.0.0-beta.40",
 	"homepage": "https://docs.protokol.com/",
 	"bugs": {
 		"url": "https://github.com/protokol/commons/issues"

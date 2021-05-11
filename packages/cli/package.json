@@ -1,6 +1,6 @@
 {
 	"name": "@protokol/cli",
-	"version": "1.0.0-beta.39",
+	"version": "1.0.0-beta.40",
 	"description": "A simple command line utility to create and broadcast NFT transactions.",
 	"license": "MIT",
 	"homepage": "https://docs.protokol.com/nft/",
