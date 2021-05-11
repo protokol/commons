@@ -2710,9 +2710,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@oclif/command", "virtual:28afc960cee8dbdfd93b53e12c458d9a2081c31da5edb92db069b6a6c5d7d46b3901468d93788ebee424addb30c6ea52531e7cbd3d2e05ddf489b890e81c70b6#npm:1.8.0"],
             ["@oclif/errors", "npm:1.3.4"],
             ["@oclif/plugin-help", "npm:3.2.2"],
-            ["@protokol/guardian-crypto", "npm:1.0.0-beta.40"],
-            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.60"],
-            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.60"],
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.41"],
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.61"],
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.61"],
             ["@sindresorhus/tsconfig", "npm:1.0.2"],
             ["@types/eslint", "npm:7.2.10"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
@@ -2847,6 +2847,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.41", {
+          "packageLocation": "./.yarn/cache/@protokol-guardian-crypto-npm-1.0.0-beta.41-8ec11d1eb0-7d0c4977d6.zip/node_modules/@protokol/guardian-crypto/",
+          "packageDependencies": [
+            ["@protokol/guardian-crypto", "npm:1.0.0-beta.41"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/guardian-transactions", [
@@ -2892,6 +2902,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bytebuffer", "npm:5.0.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.61", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-base-crypto-npm-1.0.0-beta.61-159036efb1-21ced31cc6.zip/node_modules/@protokol/nft-base-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-base-crypto", "npm:1.0.0-beta.61"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@protokol/nft-base-transactions", [
@@ -2932,6 +2952,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.60-4f3979dfd3-95ecfc6464.zip/node_modules/@protokol/nft-exchange-crypto/",
           "packageDependencies": [
             ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.60"],
+            ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
+            ["@protokol/utils", "workspace:packages/utils"],
+            ["bytebuffer", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-beta.61", {
+          "packageLocation": "./.yarn/cache/@protokol-nft-exchange-crypto-npm-1.0.0-beta.61-45d5dd29fe-acaf62e29e.zip/node_modules/@protokol/nft-exchange-crypto/",
+          "packageDependencies": [
+            ["@protokol/nft-exchange-crypto", "npm:1.0.0-beta.61"],
             ["@arkecosystem/crypto", "npm:3.0.0-next.23"],
             ["@protokol/utils", "workspace:packages/utils"],
             ["bytebuffer", "npm:5.0.1"]
