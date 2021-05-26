@@ -1,6 +1,6 @@
 import "jest-extended";
 
-const nock = require("nock");
+import nock from "nock";
 
 import { ConnectionManager, ProtokolConnection } from "../../src";
 import { dummyPeers } from "../mocks/peer-discovery/peers";
