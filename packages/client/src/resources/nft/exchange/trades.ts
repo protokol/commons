@@ -10,7 +10,7 @@ import {
 
 export class Trades extends Resource {
 	public async all(query?: AllTradesQuery): Promise<ApiResponseWithPagination<TradesResource[]>> {
-		return this.sendGet("nft/exchange/trades");
+		return this.sendGet("nft/exchange/trades", query);
 	}
 
 	public async get(id: string): Promise<ApiResponse<TradeById>> {
