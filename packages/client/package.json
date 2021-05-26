@@ -32,8 +32,8 @@
 		"build": "yarn clean && tsc",
 		"build:watch": "yarn build -w",
 		"clean": "rimraf .coverage dist tmp",
-		"test:unit": "jest --detectOpenHandles --forceExit",
-		"test:unit:coverage": "cross-env jest __tests__ --coverage --detectOpenHandles --forceExit",
+		"test:unit": "jest --forceExit",
+		"test:unit:coverage": "cross-env jest __tests__ --coverage --forceExit",
 		"test:watch": "jest --watchAll",
 		"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
 	},

@@ -35,7 +35,7 @@
 		"clean": "rimraf .coverage dist tmp",
 		"test": "yarn test:unit",
 		"test:unit": "jest __tests__/unit/** --forceExit",
-		"test:unit:coverage": "jest __tests__/unit --coverage",
+		"test:unit:coverage": "jest __tests__/unit --coverage --forceExit",
 		"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish"
 	},
 	"devDependencies": {
