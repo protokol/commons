@@ -2955,7 +2955,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.1"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:27.0.3"],
-            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.20.36"],
+            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.21.0"],
             ["typescript", "patch:typescript@npm%3A4.3.2#builtin<compat/typescript>::version=4.3.2&hash=ddfc1b"]
           ],
           "linkType": "SOFT",
@@ -2997,7 +2997,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["semver", "npm:7.3.5"],
             ["ts-jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:27.0.3"],
-            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.20.36"],
+            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.21.0"],
             ["typescript", "patch:typescript@npm%3A4.3.2#builtin<compat/typescript>::version=4.3.2&hash=ddfc1b"]
           ],
           "linkType": "SOFT",
@@ -3192,7 +3192,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["npm-check-updates", "npm:11.6.0"],
             ["rimraf", "npm:3.0.2"],
             ["ts-jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:27.0.3"],
-            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.20.36"],
+            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.21.0"],
             ["typescript", "patch:typescript@npm%3A4.3.2#builtin<compat/typescript>::version=4.3.2&hash=ddfc1b"]
           ],
           "linkType": "SOFT",
@@ -4672,15 +4672,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/asynckit-npm-0.4.0-c718858525-a024000b9d.zip/node_modules/asynckit/",
           "packageDependencies": [
             ["asynckit", "npm:0.4.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["at-least-node", [
-        ["npm:1.0.0", {
-          "packageLocation": "./.yarn/cache/at-least-node-npm-1.0.0-2b36e661fa-8f33efc162.zip/node_modules/at-least-node/",
-          "packageDependencies": [
-            ["at-least-node", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -7882,17 +7873,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["universalify", "npm:0.1.2"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:9.1.0", {
-          "packageLocation": "./.yarn/cache/fs-extra-npm-9.1.0-983c2ddb4c-e667d8df54.zip/node_modules/fs-extra/",
-          "packageDependencies": [
-            ["fs-extra", "npm:9.1.0"],
-            ["at-least-node", "npm:1.0.0"],
-            ["graceful-fs", "npm:4.2.6"],
-            ["jsonfile", "npm:6.1.0"],
-            ["universalify", "npm:2.0.0"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["fs-minipass", [
@@ -8760,15 +8740,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/int64-buffer-npm-0.1.10-1c8a8b14ca-33386214eb.zip/node_modules/int64-buffer/",
           "packageDependencies": [
             ["int64-buffer", "npm:0.1.10"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["interpret", [
-        ["npm:1.4.0", {
-          "packageLocation": "./.yarn/cache/interpret-npm-1.4.0-17b4b5b0a4-f15725d762.zip/node_modules/interpret/",
-          "packageDependencies": [
-            ["interpret", "npm:1.4.0"]
           ],
           "linkType": "HARD",
         }]
@@ -10974,10 +10945,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["marked", [
-        ["npm:2.0.7", {
-          "packageLocation": "./.yarn/cache/marked-npm-2.0.7-dde592add4-f2df7d7615.zip/node_modules/marked/",
+        ["npm:2.1.1", {
+          "packageLocation": "./.yarn/cache/marked-npm-2.1.1-f8055a8225-8c5d4c34bd.zip/node_modules/marked/",
           "packageDependencies": [
-            ["marked", "npm:2.0.7"]
+            ["marked", "npm:2.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -11517,7 +11488,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["ngrok", [
         ["npm:3.4.1", {
-          "packageLocation": "./.yarn/unplugged/ngrok-npm-3.4.1-fed079aa1a/node_modules/ngrok/",
+          "packageLocation": "./.yarn/cache/ngrok-npm-3.4.1-fed079aa1a-aecf3201a0.zip/node_modules/ngrok/",
           "packageDependencies": [
             ["ngrok", "npm:3.4.1"],
             ["@types/node", "npm:8.10.66"],
@@ -13073,7 +13044,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["protobufjs", [
         ["npm:6.10.2", {
-          "packageLocation": "./.yarn/unplugged/protobufjs-npm-6.10.2-f0f2cab7fe/node_modules/protobufjs/",
+          "packageLocation": "./.yarn/cache/protobufjs-npm-6.10.2-f0f2cab7fe-09d6292362.zip/node_modules/protobufjs/",
           "packageDependencies": [
             ["protobufjs", "npm:6.10.2"],
             ["@protobufjs/aspromise", "npm:1.1.2"],
@@ -13363,16 +13334,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["readdirp", "npm:3.5.0"],
             ["picomatch", "npm:2.3.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["rechoir", [
-        ["npm:0.6.2", {
-          "packageLocation": "./.yarn/cache/rechoir-npm-0.6.2-0df5f171ec-6646a6bce7.zip/node_modules/rechoir/",
-          "packageDependencies": [
-            ["rechoir", "npm:0.6.2"],
-            ["resolve", "patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"]
           ],
           "linkType": "HARD",
         }]
@@ -13925,18 +13886,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/shebang-regex-npm-3.0.0-899a0cd65e-ea18044ffa.zip/node_modules/shebang-regex/",
           "packageDependencies": [
             ["shebang-regex", "npm:3.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["shelljs", [
-        ["npm:0.8.4", {
-          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.4-e2890f4ce2-bdf68e3c2a.zip/node_modules/shelljs/",
-          "packageDependencies": [
-            ["shelljs", "npm:0.8.4"],
-            ["glob", "npm:7.1.7"],
-            ["interpret", "npm:1.4.0"],
-            ["rechoir", "npm:0.6.2"]
           ],
           "linkType": "HARD",
         }]
@@ -15153,27 +15102,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typedoc", [
-        ["npm:0.20.36", {
-          "packageLocation": "./.yarn/cache/typedoc-npm-0.20.36-048bd47683-362a576dee.zip/node_modules/typedoc/",
+        ["npm:0.21.0", {
+          "packageLocation": "./.yarn/cache/typedoc-npm-0.21.0-cb4d7a3b94-4d61ab692f.zip/node_modules/typedoc/",
           "packageDependencies": [
-            ["typedoc", "npm:0.20.36"]
+            ["typedoc", "npm:0.21.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.20.36", {
-          "packageLocation": "./.yarn/$$virtual/typedoc-virtual-76985f6568/0/cache/typedoc-npm-0.20.36-048bd47683-362a576dee.zip/node_modules/typedoc/",
+        ["virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.21.0", {
+          "packageLocation": "./.yarn/$$virtual/typedoc-virtual-e7d98a1253/0/cache/typedoc-npm-0.21.0-cb4d7a3b94-4d61ab692f.zip/node_modules/typedoc/",
           "packageDependencies": [
-            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.20.36"],
+            ["typedoc", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:0.21.0"],
             ["@types/typescript", null],
-            ["colors", "npm:1.4.0"],
-            ["fs-extra", "npm:9.1.0"],
+            ["glob", "npm:7.1.7"],
             ["handlebars", "npm:4.7.7"],
             ["lodash", "npm:4.17.21"],
             ["lunr", "npm:2.3.9"],
-            ["marked", "npm:2.0.7"],
+            ["marked", "npm:2.1.1"],
             ["minimatch", "npm:3.0.4"],
             ["progress", "npm:2.0.3"],
-            ["shelljs", "npm:0.8.4"],
             ["shiki", "npm:0.9.4"],
             ["typedoc-default-themes", "npm:0.12.10"],
             ["typescript", "patch:typescript@npm%3A4.3.2#builtin<compat/typescript>::version=4.3.2&hash=ddfc1b"]
