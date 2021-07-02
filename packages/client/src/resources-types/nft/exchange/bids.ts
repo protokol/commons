@@ -8,6 +8,7 @@ export interface Bids {
 	nftBid: {
 		auctionId: string;
 		bidAmount: string;
+		status?: "IN_PROGRESS" | "FINISHED" | "CANCELED" | "ACCEPTED";
 	};
 	timestamp: Timestamp;
 }

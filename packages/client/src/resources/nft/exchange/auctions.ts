@@ -12,7 +12,7 @@ import {
 
 export class Auctions extends Resource {
 	public async getAllAuctions(query?: AllAuctionsQuery): Promise<ApiResponseWithPagination<AuctionsResource[]>> {
-		return this.sendGet("nft/exchange/auctions");
+		return this.sendGet("nft/exchange/auctions", query);
 	}
 
 	public async getAuctionById(id: string): Promise<ApiResponse<AuctionsResource>> {
@@ -33,7 +33,7 @@ export class Auctions extends Resource {
 	public async getAllCanceledAuctions(
 		query?: AllAuctionCanceledQuery,
 	): Promise<ApiResponseWithPagination<AuctionCanceled[]>> {
-		return this.sendGet("nft/exchange/auctions/canceled");
+		return this.sendGet("nft/exchange/auctions/canceled", query);
 	}
 
 	public async getCanceledAuctionById(id: string): Promise<ApiResponse<AuctionCanceled>> {
