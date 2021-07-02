@@ -2,13 +2,24 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [1.0.0-beta.42](https://github.com/protokol/commons/compare/1.0.0-beta.41...1.0.0-beta.42)
+
+> 2 July 2021
+
+-   feat(client): update nft endpoints [`#90`](https://github.com/protokol/commons/pull/90)
+-   fix(deps): update ark and protokol packages to v1.0.0-beta.62 [`#89`](https://github.com/protokol/commons/pull/89)
+-   chore(deps): update dependency typedoc to ~0.21.0 [`#88`](https://github.com/protokol/commons/pull/88)
+-   chore(deps): update dependency typescript to ~4.3.0 [`#87`](https://github.com/protokol/commons/pull/87)
+-   chore(deps): update dependency jest to v27 [`#83`](https://github.com/protokol/commons/pull/83)
+-   release: 1.0.0-beta.42 [`b929da2`](https://github.com/protokol/commons/commit/b929da2faff17fb161b70493f4a507e570862369)
+
 #### [1.0.0-beta.41](https://github.com/protokol/commons/compare/1.0.0-beta.40...1.0.0-beta.41)
 
 > 26 May 2021
 
+-   release: 1.0.0 beta.41 [`#86`](https://github.com/protokol/commons/pull/86)
 -   fix(client): fix return type to array when returning multiple bids [`#85`](https://github.com/protokol/commons/pull/85)
 -   chore(deps): update dependency @types/semver to v7.3.6 [`#82`](https://github.com/protokol/commons/pull/82)
--   release: 1.0.0 beta.41 [`1fc4a46`](https://github.com/protokol/commons/commit/1fc4a464a637a9d07b158d10a952cf4bc33f2101)
 
 #### [1.0.0-beta.40](https://github.com/protokol/commons/compare/1.0.0-beta.39...1.0.0-beta.40)
 
