@@ -5,6 +5,7 @@ import {
 	Assets as AssetsResource,
 	AssetsWallet,
 	SearchAssetApiBody,
+	WalletAssetsQuery,
 } from "../../../resources-types/nft/base/assets";
 
 export class Assets extends Resource {
@@ -22,7 +23,7 @@ export class Assets extends Resource {
 
 	public async walletAssets(
 		publicKey: string,
-		query?: AllAssetsQuery,
+		query?: WalletAssetsQuery,
 	): Promise<ApiResponseWithPagination<AssetsResource[]>> {
 		return this.sendGet(`nft/assets/wallet/${publicKey}`, query);
 	}
