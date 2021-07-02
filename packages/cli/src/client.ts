@@ -7,7 +7,7 @@ export class Client {
 	public constructor(private config: App["config"]) {}
 
 	public getRandomSeed() {
-		return seeds[Math.floor(Math.random() * seeds.length)];
+		return `http://${seeds[Math.floor(Math.random() * seeds.length)]}:4003`;
 	}
 
 	public getSeed() {
@@ -20,7 +20,7 @@ export class Client {
 
 	public async retrieveSenderWallet(sender: string, seed?: string) {
 		try {
-			const response = await Utils.http.get(`http://${this.getSeed()}:4003/api/wallets/${sender}`);
+			const response = await Utils.http.get(`${this.getSeed()}/api/wallets/${sender}`);
 			return response.data.data;
 		} catch (ex) {
 			console.log(sender);
@@ -33,7 +33,7 @@ export class Client {
 	public async retrieveTransaction(sender, type) {
 		try {
 			const response = await Utils.http.get(
-				`http://${this.getSeed()}:4003/api/transactions?type=${type}&senderPublicKey=${sender}`,
+				`${this.getSeed()}/api/transactions?type=${type}&senderPublicKey=${sender}`,
 			);
 			return response.data.data;
 		} catch (ex) {
@@ -44,7 +44,7 @@ export class Client {
 
 	public async retrieveNetworktime() {
 		try {
-			const response = await Utils.http.get(`http://${this.getSeed()}:4003/api/node/status`);
+			const response = await Utils.http.get(`${this.getSeed()}/api/node/status`);
 			return response.data.data.timestamp;
 		} catch (ex) {
 			console.log("retrieveNetworktime: " + ex.message);
@@ -54,7 +54,7 @@ export class Client {
 
 	public async retrieveHeight() {
 		try {
-			const response = await Utils.http.get(`http://${this.getSeed()}:4003/api/blockchain`);
+			const response = await Utils.http.get(`${this.getSeed()}/api/blockchain`);
 			return response.data.data.block.height;
 		} catch (ex) {
 			console.log("retrieveHeight: " + ex.message);
@@ -62,7 +62,7 @@ export class Client {
 		}
 	}
 	public async retrieveBidsByPublicKey(sender) {
-		const response = await Utils.http.post(`http://${this.getSeed()}:4003/api/nft/exchange/bids/search`, {
+		const response = await Utils.http.post(`${this.getSeed()}/api/nft/exchange/bids/search`, {
 			body: {
 				senderPublicKey: sender,
 			},
@@ -76,7 +76,7 @@ export class Client {
 				return;
 			}
 
-			const response = await Utils.http.post(`http://${this.getSeed()}:4003/api/transactions`, {
+			const response = await Utils.http.post(`${this.getSeed()}/api/transactions`, {
 				headers: { "Content-Type": "application/json", port: 4003 },
 				body: {
 					transactions: transactions,
