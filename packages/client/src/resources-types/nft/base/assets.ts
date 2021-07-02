@@ -36,6 +36,11 @@ export interface AllAssetsQuery extends ApiQuery {
 	transform?: boolean;
 }
 
+export interface WalletAssetsQuery extends AllAssetsQuery {
+	inAuction?: boolean;
+	inExpiredAuction?: boolean;
+}
+
 export interface SearchAssetApiBody {
 	[asset: string]: any;
 }

@@ -1,6 +1,7 @@
 import { ApiQuery } from "@arkecosystem/client";
 
 import { Timestamp } from "../../timestamp";
+import { Bids } from "./bids";
 
 export interface Auctions {
 	id: string;
@@ -11,6 +12,8 @@ export interface Auctions {
 		expiration: {
 			blockHeight: number;
 		};
+		status?: "IN_PROGRESS" | "FINISHED" | "CANCELED" | "EXPIRED";
+		bids?: Bids[];
 	};
 	timestamp: Timestamp;
 }
@@ -42,6 +45,7 @@ export interface AuctionsWallet {
 export interface AllAuctionsQuery extends ApiQuery {
 	orderBy?: string;
 	transform?: boolean;
+	expired?: boolean;
 }
 
 export interface SearchAuctionsApiBody {
@@ -54,7 +58,12 @@ export interface SearchAuctionsApiBody {
 }
 
 export interface SearchAuctionsApiQuery extends ApiQuery {
-	orderBy: string;
+	orderBy?: string;
+	transform?: boolean;
+	onlyActive?: boolean;
+	expired?: boolean;
+	includeBids?: boolean;
+	canceledBids?: boolean;
 }
 
 export interface AuctionCanceled {
@@ -68,4 +77,5 @@ export interface AuctionCanceled {
 
 export interface AllAuctionCanceledQuery extends ApiQuery {
 	orderBy?: string;
+	transform?: boolean;
 }
