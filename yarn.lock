@@ -2248,7 +2248,7 @@ __metadata:
     "@protokol/guardian-crypto": 1.0.0-beta.41
     "@protokol/nft-base-crypto": 1.0.0-beta.63
     "@protokol/nft-exchange-crypto": 1.0.0-beta.63
-    "@sindresorhus/tsconfig": ^1.0.1
+    "@sindresorhus/tsconfig": ^2.0.0
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
@@ -2283,7 +2283,7 @@ __metadata:
   resolution: "@protokol/client@workspace:packages/client"
   dependencies:
     "@arkecosystem/client": 2.0.0
-    "@sindresorhus/tsconfig": ^1.0.1
+    "@sindresorhus/tsconfig": ^2.0.0
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
@@ -2324,7 +2324,7 @@ __metadata:
   dependencies:
     "@arkecosystem/core": ^3.0.0-next
     "@arkecosystem/core-cli": ^3.0.0-next
-    "@sindresorhus/tsconfig": ^1.0.1
+    "@sindresorhus/tsconfig": ^2.0.0
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
@@ -2506,7 +2506,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@protokol/utils@workspace:packages/utils"
   dependencies:
-    "@sindresorhus/tsconfig": ^1.0.1
+    "@sindresorhus/tsconfig": ^2.0.0
     "@types/jest": ^27.0.0
     "@types/node": ^14.14.37
     "@types/rimraf": ^3.0.0
@@ -2583,10 +2583,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sindresorhus/tsconfig@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "@sindresorhus/tsconfig@npm:1.0.2"
-  checksum: 7091862d88968d252b46f7e36cea0fdd6da2439887f3c39822e49730387ca616f891ad4be375f306a43fc44ec949c33fd8827919a8acb2e0cd1f44d5a1d9b9e7
+"@sindresorhus/tsconfig@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@sindresorhus/tsconfig@npm:2.0.0"
+  checksum: fea48f9b1e139e532b400c9efd8db10ac1c9fd6d750edce04b3f7f17c1f9ae868afe496d9937ebcf8bc5ecbeb83263166b5b5fa1ad699249424f2e2704d5bfe0
   languageName: node
   linkType: hard
 
