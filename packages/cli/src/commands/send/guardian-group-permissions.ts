@@ -5,8 +5,9 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class GuardianGroupPermissions extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.GuardianGroupPermissions].name;
-	public static flags = {
+	public static override description =
+		SendBase.defaultDescription + builders[TransactionType.GuardianGroupPermissions].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		name: flags.string({ description: "Group name" }),
 		priority: flags.integer({ description: "Group priority" }),
@@ -16,7 +17,7 @@ export default class GuardianGroupPermissions extends SendBase {
 		default: flags.boolean({ description: "Flag for setting group as default", default: false }),
 	};
 
-	public type = TransactionType.GuardianGroupPermissions;
+	public override type = TransactionType.GuardianGroupPermissions;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

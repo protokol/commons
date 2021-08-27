@@ -5,13 +5,13 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class NftCancelBid extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.NftCancelBid].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.NftCancelBid].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		bidId: flags.string({ description: "Bid id" }),
 	};
 
-	public type = TransactionType.NftCancelBid;
+	public override type = TransactionType.NftCancelBid;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

@@ -5,8 +5,8 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class HtlcLock extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.HtlcLock].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.HtlcLock].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		secretHash: flags.string({ description: "sha256 of secret" }),
 		expirationType: flags.integer({ description: "Expiration type: 1=EpochTimestamp, 2=BlockHeight" }),
@@ -14,7 +14,7 @@ export default class HtlcLock extends SendBase {
 		recipientId: flags.string({ char: "r", description: "Recipient id - Address" }),
 	};
 
-	public type = TransactionType.HtlcLock;
+	public override type = TransactionType.HtlcLock;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

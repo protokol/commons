@@ -5,14 +5,14 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class Vote extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.Vote].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.Vote].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		vote: flags.string({ char: "v", description: "Vote" }),
 		unvote: flags.string({ char: "u", description: "Unvote" }),
 	};
 
-	public type = TransactionType.Vote;
+	public override type = TransactionType.Vote;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

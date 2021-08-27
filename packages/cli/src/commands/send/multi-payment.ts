@@ -5,8 +5,8 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class MultiPayment extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.MultiPayment].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.MultiPayment].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		recipients: flags.string({
 			description: "Addresses of recipients",
@@ -21,7 +21,7 @@ export default class MultiPayment extends SendBase {
 		}),
 	};
 
-	public type = TransactionType.MultiPayment;
+	public override type = TransactionType.MultiPayment;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

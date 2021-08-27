@@ -5,8 +5,9 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class GuardianUserPermissions extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.GuardianUserPermissions].name;
-	public static flags = {
+	public static override description =
+		SendBase.defaultDescription + builders[TransactionType.GuardianUserPermissions].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		groupNames: flags.string({ description: "Stringified array of group names" }),
 		publicKey: flags.string({ description: "User's public key" }),
@@ -14,7 +15,7 @@ export default class GuardianUserPermissions extends SendBase {
 		deny: flags.string({ description: "Stringified array of deny permission objects" }),
 	};
 
-	public type = TransactionType.GuardianUserPermissions;
+	public override type = TransactionType.GuardianUserPermissions;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

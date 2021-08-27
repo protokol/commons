@@ -5,13 +5,13 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class HtlcRefund extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.HtlcRefund].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.HtlcRefund].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		lockTransactionId: flags.string({ description: "Lock transaction id" }),
 	};
 
-	public type = TransactionType.HtlcRefund;
+	public override type = TransactionType.HtlcRefund;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };
