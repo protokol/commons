@@ -5,14 +5,14 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class NFTCreateToken extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.NFTCreateToken].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.NFTCreateToken].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		collectionId: flags.string({ description: "Collection id" }),
 		attributes: flags.string({ description: "Stringified token attributes object" }),
 	};
 
-	public type = TransactionType.NFTCreateToken;
+	public override type = TransactionType.NFTCreateToken;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

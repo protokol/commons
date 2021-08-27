@@ -5,15 +5,15 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class NFTAuction extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.NFTAuction].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.NFTAuction].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		nftIds: flags.string({ description: "Nft ids separated with comma" }),
 		startAmount: flags.integer({ description: "Auction start amount" }),
 		expiration: flags.integer({ description: "Auction expiration - block height" }),
 	};
 
-	public type = TransactionType.NFTAuction;
+	public override type = TransactionType.NFTAuction;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

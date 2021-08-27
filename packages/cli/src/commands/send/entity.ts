@@ -5,8 +5,8 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class Entity extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.Entity].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.Entity].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		type: flags.integer({ description: "Entity type" }),
 		subType: flags.integer({ description: "Entity subType" }),
@@ -16,7 +16,7 @@ export default class Entity extends SendBase {
 		ipfsData: flags.string({ description: "Ipfs data" }),
 	};
 
-	public type = TransactionType.Entity;
+	public override type = TransactionType.Entity;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

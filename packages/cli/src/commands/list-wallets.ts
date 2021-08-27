@@ -8,7 +8,7 @@ import { App } from "../types";
 import { WalletRepository } from "../wallets-repository";
 
 export default class ListWallets extends Command {
-	public static description = listWallets.description;
+	public static override description = listWallets.description;
 
 	public async run() {
 		const filesystem = new Filesystem();

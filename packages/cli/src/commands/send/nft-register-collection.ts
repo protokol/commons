@@ -5,13 +5,14 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class NFTRegisterCollection extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.NFTRegisterCollection].name;
-	public static flags = {
+	public static override description =
+		SendBase.defaultDescription + builders[TransactionType.NFTRegisterCollection].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		registerCollection: flags.string({ description: "Stringified register collection object" }),
 	};
 
-	public type = TransactionType.NFTRegisterCollection;
+	public override type = TransactionType.NFTRegisterCollection;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };

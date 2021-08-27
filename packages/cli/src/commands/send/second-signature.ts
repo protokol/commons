@@ -5,13 +5,13 @@ import { TransactionType } from "../../enums";
 import { SendBase } from "../../shared/send-base";
 
 export default class SecondSignature extends SendBase {
-	public static description = SendBase.defaultDescription + builders[TransactionType.SecondSignature].name;
-	public static flags = {
+	public static override description = SendBase.defaultDescription + builders[TransactionType.SecondSignature].name;
+	public static override flags = {
 		...SendBase.defaultFlags,
 		secondPassphrase: flags.string({ char: "s", description: "Second passphrase" }),
 	};
 
-	public type = TransactionType.SecondSignature;
+	public override type = TransactionType.SecondSignature;
 
 	protected prepareConfig(config, flags) {
 		const mergedConfig = { ...config };
