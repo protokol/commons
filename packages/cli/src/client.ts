@@ -22,7 +22,7 @@ export class Client {
 		try {
 			const response = await Utils.http.get(`${this.getSeed()}/api/wallets/${sender}`);
 			return response.data.data;
-		} catch (ex) {
+		} catch (ex: any) {
 			console.log(sender);
 			console.log("retrieveSenderWallet: " + ex.message);
 			console.log("Probably a cold wallet");
@@ -36,7 +36,7 @@ export class Client {
 				`${this.getSeed()}/api/transactions?type=${type}&senderPublicKey=${sender}`,
 			);
 			return response.data.data;
-		} catch (ex) {
+		} catch (ex: any) {
 			console.log("retrieveTransaction: " + ex.message);
 			return {};
 		}
@@ -46,7 +46,7 @@ export class Client {
 		try {
 			const response = await Utils.http.get(`${this.getSeed()}/api/node/status`);
 			return response.data.data.timestamp;
-		} catch (ex) {
+		} catch (ex: any) {
 			console.log("retrieveNetworktime: " + ex.message);
 			return 0;
 		}
@@ -56,7 +56,7 @@ export class Client {
 		try {
 			const response = await Utils.http.get(`${this.getSeed()}/api/blockchain`);
 			return response.data.data.block.height;
-		} catch (ex) {
+		} catch (ex: any) {
 			console.log("retrieveHeight: " + ex.message);
 			return 1;
 		}
@@ -92,7 +92,7 @@ export class Client {
 
 				return response.data;
 			}
-		} catch (ex) {
+		} catch (ex: any) {
 			console.log(JSON.stringify(ex.message));
 		}
 	}

@@ -10,7 +10,7 @@ const sendTransaction = async (app: App, type: number, quantity: number) => {
 		const response = await app.client.postTransaction(transactions);
 
 		app.walletRepository.handleWalletChanges(walletChanges, response);
-	} catch (ex) {
+	} catch (ex: any) {
 		console.log(ex.message);
 	}
 };

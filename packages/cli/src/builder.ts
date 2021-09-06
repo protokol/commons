@@ -19,13 +19,17 @@ export class Builder {
 
 		const walletChanges: WalletChange[] = [];
 
-		let senderWallet = (this.app.config.passphrase
-			? this.app.walletRepository.getWalletInfo(this.app.config.passphrase)
-			: this.app.walletRepository.getRandomWallet()) as ExtendedWallet;
+		let senderWallet = (
+			this.app.config.passphrase
+				? this.app.walletRepository.getWalletInfo(this.app.config.passphrase)
+				: this.app.walletRepository.getRandomWallet()
+		) as ExtendedWallet;
 
-		let recipientWallet = (this.app.config.recipientId
-			? { address: this.app.config.recipientId }
-			: this.app.walletRepository.getRandomWallet()) as ExtendedWallet;
+		let recipientWallet = (
+			this.app.config.recipientId
+				? { address: this.app.config.recipientId }
+				: this.app.walletRepository.getRandomWallet()
+		) as ExtendedWallet;
 
 		senderWallet = {
 			...senderWallet,
@@ -386,7 +390,7 @@ export class Builder {
 			const height = await this.app.client.retrieveHeight();
 
 			Managers.configManager.setHeight(height);
-		} catch (ex) {
+		} catch (ex: any) {
 			console.log("configureCrypto: " + ex.message);
 			process.exit();
 		}
