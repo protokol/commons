@@ -36,10 +36,10 @@
 		"test:unit:coverage": "cross-env jest __tests__ --coverage --forceExit",
 		"test:watch": "jest --watchAll",
 		"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish",
-	  	"publish": "yarn build && yarn npm publish --access public --tolerate-republish"
+		"publish": "yarn build && yarn npm publish --access public --tolerate-republish"
 	},
 	"dependencies": {
-		"@arkecosystem/client": "3.0.0",
+		"@arkecosystem/client": "^3.0.0",
 		"is-url-superb": "^5.0.0",
 		"ky": "^0.25.0",
 		"ky-universal": "^0.8.2",
