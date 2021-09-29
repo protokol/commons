@@ -37,7 +37,7 @@
 		"test:unit": "jest __tests__/unit/** --forceExit",
 		"test:unit:coverage": "jest __tests__/unit --coverage --forceExit",
 		"publish:beta": "yarn build && yarn npm publish --tag beta --access public --tolerate-republish",
-	  	"publish": "yarn build && yarn npm publish --access public --tolerate-republish"
+		"publish": "yarn build && yarn npm publish --access public --tolerate-republish"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^2.0.0",
