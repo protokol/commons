@@ -1886,7 +1886,7 @@ __metadata:
     cross-env: ^7.0.2
     eslint: ^7.13.0
     eslint-config-prettier: ^8.0.0
-    eslint-plugin-jest: ^24.1.3
+    eslint-plugin-jest: ^25.0.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-simple-import-sort: ^7.0.0
     fs-extra: ^10.0.0
@@ -1923,7 +1923,7 @@ __metadata:
     cross-env: ^7.0.2
     eslint: ^7.13.0
     eslint-config-prettier: ^8.0.0
-    eslint-plugin-jest: ^24.1.3
+    eslint-plugin-jest: ^25.0.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-simple-import-sort: ^7.0.0
     is-url-superb: ^5.0.0
@@ -1963,7 +1963,7 @@ __metadata:
     cross-env: ^7.0.2
     eslint: ^7.7.0
     eslint-config-prettier: ^8.0.0
-    eslint-plugin-jest: ^24.0.0
+    eslint-plugin-jest: ^25.0.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-simple-import-sort: ^7.0.0
     jest: ^27.0.1
@@ -5160,18 +5160,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:^24.0.0, eslint-plugin-jest@npm:^24.1.3":
-  version: 24.4.3
-  resolution: "eslint-plugin-jest@npm:24.4.3"
+"eslint-plugin-jest@npm:^25.0.0":
+  version: 25.0.1
+  resolution: "eslint-plugin-jest@npm:25.0.1"
   dependencies:
     "@typescript-eslint/experimental-utils": ^4.0.1
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ">= 4"
-    eslint: ">=5"
+    "@typescript-eslint/eslint-plugin": ^4.0.0
+    eslint: ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     "@typescript-eslint/eslint-plugin":
       optional: true
-  checksum: 007fdb1d2ff695ac2710da4f3ac386114d19119683a9185cf53bffbbb01066158e3867f5d4bf254f9ddc04a3dc2ed4835420b45e383c1d7de1150279538813e8
+  checksum: b32fe8c5aa5fe3c6e22fa6a6d7dba9cab366c8cf973b288e9e5e75c35ffa08638dee49e20271bb61e8e70e2323fed2feeade085fd572ded4703f6defde415a95
   languageName: node
   linkType: hard
 
