@@ -1905,7 +1905,7 @@ __metadata:
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
-    "@types/node": ^14.14.37
+    "@types/node": ^16.0.0
     "@types/prettier": ^2.1.5
     "@types/rimraf": ^3.0.0
     "@typescript-eslint/eslint-plugin": ^5.0.0
@@ -1941,7 +1941,7 @@ __metadata:
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
     "@types/lodash.orderby": 4.6.6
-    "@types/node": ^14.14.37
+    "@types/node": ^16.0.0
     "@types/prettier": ^2.1.5
     "@types/rimraf": ^3.0.0
     "@types/semver": 7.3.8
@@ -1981,7 +1981,7 @@ __metadata:
     "@types/eslint": ^7.2.0
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
-    "@types/node": ^14.14.37
+    "@types/node": ^16.0.0
     "@types/prettier": ^2.0.2
     "@types/rimraf": ^3.0.0
     "@typescript-eslint/eslint-plugin": ^5.0.0
@@ -2172,7 +2172,7 @@ __metadata:
   dependencies:
     "@sindresorhus/tsconfig": ^2.0.0
     "@types/jest": ^27.0.0
-    "@types/node": ^14.14.37
+    "@types/node": ^16.0.0
     "@types/rimraf": ^3.0.0
     codecov: ^3.8.1
     cross-env: ^7.0.2
@@ -2526,10 +2526,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.37":
-  version: 14.17.19
-  resolution: "@types/node@npm:14.17.19"
-  checksum: 3365ee4fe7878b0f1d36dc4372146322c7f4db3b0574401753084144b04356e02d15cd55db79e77dda071a06cbcc37f57c8888441fd4c8b1c24f9765c7441b2a
+"@types/node@npm:^16.0.0":
+  version: 16.11.26
+  resolution: "@types/node@npm:16.11.26"
+  checksum: 57757caaba3f0d95de82198cb276a1002c49b710108c932a1d02d7c91ff2fa57cfe2dd19fde60853b6dd90b0964b3cf35557981d2628e20aed6a909057aedfe6
   languageName: node
   linkType: hard
 
