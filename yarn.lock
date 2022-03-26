@@ -1954,7 +1954,7 @@ __metadata:
     eslint-plugin-jest: ^25.0.0
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-simple-import-sort: ^7.0.0
-    is-url-superb: ^5.0.0
+    is-url-superb: ^6.0.0
     jest: ^27.0.1
     jest-extended: ^0.11.5
     ky: ^0.25.0
@@ -7179,10 +7179,10 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"is-url-superb@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "is-url-superb@npm:5.0.0"
-  checksum: dbd6f7da8ac7eb95582d9534db43cdee60f9a2cf8b9eac5f14a20e7c13bc08681a1061b0ee03cf63a0811bb464f64389c49474263860011a41d32b398f7905a5
+"is-url-superb@npm:^6.0.0":
+  version: 6.1.0
+  resolution: "is-url-superb@npm:6.1.0"
+  checksum: 8a6fe5bb04eccefe47326897875f2072058bbe46a7f441fbed39860a11694bcf58db54865017110cc057961169c5f30bb2be7a154a9cffc2612bbd955d93aeb2
   languageName: node
   linkType: hard
 
