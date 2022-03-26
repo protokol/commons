@@ -2561,7 +2561,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jest", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:25.0.1"],
             ["eslint-plugin-prettier", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:4.0.0"],
             ["eslint-plugin-simple-import-sort", "virtual:4b1428591021e32f0d89e769ae641b4c1cf3338d802d101edb99ce1cf18852d42e5b37392da080568bed703e9f2976781966597354065e0827fe6090516d066c#npm:7.0.0"],
-            ["is-url-superb", "npm:5.0.0"],
+            ["is-url-superb", "npm:6.1.0"],
             ["jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:27.2.3"],
             ["jest-extended", "npm:0.11.5"],
             ["ky", "npm:0.25.1"],
@@ -8614,10 +8614,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:5.0.0", {
-          "packageLocation": "./.yarn/cache/is-url-superb-npm-5.0.0-b35332856b-dbd6f7da8a.zip/node_modules/is-url-superb/",
+        ["npm:6.1.0", {
+          "packageLocation": "./.yarn/cache/is-url-superb-npm-6.1.0-fe9e8c546c-8a6fe5bb04.zip/node_modules/is-url-superb/",
           "packageDependencies": [
-            ["is-url-superb", "npm:5.0.0"]
+            ["is-url-superb", "npm:6.1.0"]
           ],
           "linkType": "HARD",
         }]
