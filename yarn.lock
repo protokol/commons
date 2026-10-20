@@ -1940,7 +1940,7 @@ __metadata:
     "@types/eslint": ^7.2.5
     "@types/eslint-plugin-prettier": ^3.1.0
     "@types/jest": ^27.0.0
-    "@types/lodash.orderby": 4.6.6
+    "@types/lodash.orderby": 4.6.9
     "@types/node": ^14.14.37
     "@types/prettier": ^2.1.5
     "@types/rimraf": ^3.0.0
@@ -2468,12 +2468,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash.orderby@npm:4.6.6":
-  version: 4.6.6
-  resolution: "@types/lodash.orderby@npm:4.6.6"
+"@types/lodash.orderby@npm:4.6.9":
+  version: 4.6.9
+  resolution: "@types/lodash.orderby@npm:4.6.9"
   dependencies:
     "@types/lodash": "*"
-  checksum: fdaeab55df9c259241b78162d361739c9a5aedff8ba83490054c3ae7673359bb57238bcc505893c7a547f467dccb1f67d7a77ad9a6c4c448b6199d680671a295
+  checksum: f3ca3a6ba09caef431955f3110a6704e25c90934fb70973e2ed1f4dd9aa48c4776c7e8b909b78f9ae1fb169e437497f8fe8e60fafb5c74ede49c36739ac44c3e
   languageName: node
   linkType: hard
 
