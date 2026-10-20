@@ -2547,7 +2547,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.28.0"],
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/lodash.orderby", "npm:4.6.6"],
+            ["@types/lodash.orderby", "npm:4.6.9"],
             ["@types/node", "npm:14.17.19"],
             ["@types/prettier", "npm:2.4.1"],
             ["@types/rimraf", "npm:3.0.2"],
@@ -3124,10 +3124,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/lodash.orderby", [
-        ["npm:4.6.6", {
-          "packageLocation": "./.yarn/cache/@types-lodash.orderby-npm-4.6.6-650bdea172-fdaeab55df.zip/node_modules/@types/lodash.orderby/",
+        ["npm:4.6.9", {
+          "packageLocation": "./.yarn/cache/@types-lodash.orderby-npm-4.6.9-8e19efbd9b-f3ca3a6ba0.zip/node_modules/@types/lodash.orderby/",
           "packageDependencies": [
-            ["@types/lodash.orderby", "npm:4.6.6"],
+            ["@types/lodash.orderby", "npm:4.6.9"],
             ["@types/lodash", "npm:4.14.175"]
           ],
           "linkType": "HARD",
