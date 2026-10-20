@@ -1957,7 +1957,7 @@ __metadata:
     is-url-superb: ^5.0.0
     jest: ^27.0.1
     jest-extended: ^0.11.5
-    ky: ^0.25.0
+    ky: ^0.33.0
     ky-universal: ^0.8.2
     lodash.orderby: ^4.6.0
     nock: ^13.0.5
@@ -8264,10 +8264,10 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"ky@npm:^0.25.0":
-  version: 0.25.1
-  resolution: "ky@npm:0.25.1"
-  checksum: ae1b7bebb48001d00d53e386e077939eeef7398a36b4fb45660f988ddb17d583d077290f2adb9706b4761f9d3b74918eb8d9f45ce799760143e104e1053b33ef
+"ky@npm:^0.33.0":
+  version: 0.33.3
+  resolution: "ky@npm:0.33.3"
+  checksum: d1869e1f33c0165355f621b6726fcc1a9de20a31f4a826ca0cfd5753d83b9cba8723402d554a00194e0ee3959e0dda0638f4b99d54a3a7de928b55ff870b0bcc
   languageName: node
   linkType: hard
 
