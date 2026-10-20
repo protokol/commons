@@ -2564,7 +2564,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-url-superb", "npm:5.0.0"],
             ["jest", "virtual:772dececd512235e99a9e38182a55a0f55052c3e33f380b55e8f0344d53d51faedcf1d7423f670a8c1697dccd7f24010972ab697cb115fccca09a353fca8a767#npm:27.2.3"],
             ["jest-extended", "npm:0.11.5"],
-            ["ky", "npm:0.25.1"],
+            ["ky", "npm:0.33.3"],
             ["ky-universal", "virtual:68a8412a6ffd07e8f9b7750bdca99ff955bcd439b3cb18029181ac8ce564b910ede7c32be361c332d82f986ffd417717f431507916453b0e18938fd4a5346344#npm:0.8.2"],
             ["lodash.orderby", "npm:4.6.0"],
             ["nock", "npm:13.1.3"],
@@ -9782,10 +9782,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:0.25.1", {
-          "packageLocation": "./.yarn/cache/ky-npm-0.25.1-40ea38970a-ae1b7bebb4.zip/node_modules/ky/",
+        ["npm:0.33.3", {
+          "packageLocation": "./.yarn/cache/ky-npm-0.33.3-7d1cbfa9f4-d1869e1f33.zip/node_modules/ky/",
           "packageDependencies": [
-            ["ky", "npm:0.25.1"]
+            ["ky", "npm:0.33.3"]
           ],
           "linkType": "HARD",
         }]
@@ -9805,7 +9805,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ky", null],
             ["@types/web-streams-polyfill", null],
             ["abort-controller", "npm:3.0.0"],
-            ["ky", "npm:0.25.1"],
+            ["ky", "npm:0.33.3"],
             ["node-fetch", "npm:3.0.0-beta.9"],
             ["web-streams-polyfill", null]
           ],
